@@ -37,8 +37,7 @@ def getAccountAssets(username):
         fullAsset = response.json()
         #print(fullAsset)
         assets["inventory"][i].update({"fields" : fullAsset["asset"]["fields"]})
-#members.update({member["username"] : 0})
-    
+
     dumps(assets,file_name=username+'/assets.json')
     return assets
 
