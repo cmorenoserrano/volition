@@ -15,45 +15,21 @@ import shutil
 ## ----------------------------------------------------------------------------
 session = requests.Session()
 
-def getPlayerDetails(username):
-    baseUrl = "https://api.chess.com/pub/player/" + username
+def getAccountDetails(username):
+    baseUrl = "https://volition-node-beta.pancakehermit.com/accounts/" + username
 
     response = session.get(baseUrl)
     details = response.json()
     dumps(details,file_name=username+'/details.json')
-    #print(stats)
     return details
 
-def getUserGames(username):
-    #username = "sprocket314"
-    baseUrl = "https://api.chess.com/pub/player/" + username + "/games/"
-    archivesUrl = baseUrl + "archives"
-
-    #read the archives url and store in a list
-    f = urllib.request.urlopen(archivesUrl)
-    archives = f.read().decode("utf-8")
-    archives = archives.replace("{\"archives\":[\"", "\",\"")
-    archivesList = archives.split("\",\"" + baseUrl)
-    archivesList[len(archivesList)-1] = archivesList[len(archivesList)-1].rstrip("\"]}")
-
-    #download all the archives
-    for i in range(len(archivesList)-1):
-        url = baseUrl + archivesList[i+1] + "/pgn"
-        filename = archivesList[i+1].replace("/", "-")
-        if not os.path.exists(username+"/chess_games"):
-            os.mkdir(username+"/chess_games")
-        urllib.request.urlretrieve(url, username+"/chess_games/" + filename + ".pgn") #change
-        print(filename + ".pgn has been downloaded.")
-    print ("All files have been downloaded.")
-
-def getPlayerMatches(username):
-    baseUrl = "https://api.chess.com/pub/player/" + username + "/matches"
+def getAccountAssets(username):
+    baseUrl = "https://volition-node-beta.pancakehermit.com/accounts/" + username + "/inventory/assets"
 
     response = session.get(baseUrl)
-    matches = response.json()
-    dumps(matches,file_name=username+'/matches.json')
-    #print(matches)
-    return matches
+    assets = response.json()
+    dumps(assets,file_name=username+'/assets.json')
+    return assets
 
 def getPlayerStats(username):
     baseUrl = "https://api.chess.com/pub/player/" + username + "/stats"
@@ -466,9 +442,9 @@ def main():
         username = args["username"]
         if not os.path.exists(username):
             os.mkdir(username)
-        getPlayerDetails(username)
-        getPlayerMatches(username)
-        getPlayerStats(username)
+        getAccountDetails(username)
+        getAccountAssets(username)
+        #getPlayerStats(username)
 
     t +=1
     printProgressBar(t,graphNo)

@@ -1,0 +1,3855 @@
+{
+    "inventory": [
+        {
+            "assetID": "nizaf-kuzal-fohuh-044",
+            "fields": {},
+            "inventoryNonce": 45,
+            "owner": "sprocket314",
+            "type": "1-C-272-1-O"
+        },
+        {
+            "assetID": "johug-jonum-bigaf-187",
+            "fields": {},
+            "inventoryNonce": 1,
+            "owner": "sprocket314",
+            "type": "1-A-0-1"
+        },
+        {
+            "assetID": "gibaz-kumud-fojos-126",
+            "fields": {},
+            "inventoryNonce": 51,
+            "owner": "sprocket314",
+            "type": "1-C-273-1-O"
+        },
+        {
+            "assetID": "loduj-havir-ridig-115",
+            "fields": {},
+            "inventoryNonce": 3,
+            "owner": "sprocket314",
+            "type": "1-C-1-1"
+        },
+        {
+            "assetID": "mohuf-pojuf-zonil-047",
+            "fields": {},
+            "inventoryNonce": 3,
+            "owner": "sprocket314",
+            "type": "1-C-1-1"
+        },
+        {
+            "assetID": "ninit-gunaf-tataf-204",
+            "fields": {},
+            "inventoryNonce": 3,
+            "owner": "sprocket314",
+            "type": "1-C-1-1"
+        },
+        {
+            "assetID": "pudaj-surib-tovan-244",
+            "fields": {},
+            "inventoryNonce": 3,
+            "owner": "sprocket314",
+            "type": "1-C-1-1"
+        },
+        {
+            "assetID": "rolop-titar-pipar-016",
+            "fields": {},
+            "inventoryNonce": 3,
+            "owner": "sprocket314",
+            "type": "1-C-1-1"
+        },
+        {
+            "assetID": "sivur-govul-dahih-061",
+            "fields": {},
+            "inventoryNonce": 3,
+            "owner": "sprocket314",
+            "type": "1-C-1-1"
+        },
+        {
+            "assetID": "taziv-lokab-zihab-132",
+            "fields": {},
+            "inventoryNonce": 3,
+            "owner": "sprocket314",
+            "type": "1-C-1-1"
+        },
+        {
+            "assetID": "vizas-dofoj-jijun-116",
+            "fields": {},
+            "inventoryNonce": 3,
+            "owner": "sprocket314",
+            "type": "1-C-1-1"
+        },
+        {
+            "assetID": "zolad-zirod-tohog-161",
+            "fields": {},
+            "inventoryNonce": 3,
+            "owner": "sprocket314",
+            "type": "1-C-1-1"
+        },
+        {
+            "assetID": "bimip-zotuj-tunat-045",
+            "fields": {},
+            "inventoryNonce": 4,
+            "owner": "sprocket314",
+            "type": "1-C-2-1"
+        },
+        {
+            "assetID": "difur-junot-lifin-057",
+            "fields": {},
+            "inventoryNonce": 4,
+            "owner": "sprocket314",
+            "type": "1-C-2-1"
+        },
+        {
+            "assetID": "fukom-dovif-supol-199",
+            "fields": {},
+            "inventoryNonce": 4,
+            "owner": "sprocket314",
+            "type": "1-C-2-1"
+        },
+        {
+            "assetID": "goguf-ninut-kazah-177",
+            "fields": {},
+            "inventoryNonce": 4,
+            "owner": "sprocket314",
+            "type": "1-C-2-1"
+        },
+        {
+            "assetID": "hizad-dopub-zobik-215",
+            "fields": {},
+            "inventoryNonce": 4,
+            "owner": "sprocket314",
+            "type": "1-C-2-1"
+        },
+        {
+            "assetID": "jumol-pagud-dokah-137",
+            "fields": {},
+            "inventoryNonce": 4,
+            "owner": "sprocket314",
+            "type": "1-C-2-1"
+        },
+        {
+            "assetID": "kudaf-vutur-busif-214",
+            "fields": {},
+            "inventoryNonce": 4,
+            "owner": "sprocket314",
+            "type": "1-C-2-1"
+        },
+        {
+            "assetID": "ludor-masuk-lufok-059",
+            "fields": {},
+            "inventoryNonce": 4,
+            "owner": "sprocket314",
+            "type": "1-C-2-1"
+        },
+        {
+            "assetID": "mumoj-hiroj-viguv-118",
+            "fields": {},
+            "inventoryNonce": 4,
+            "owner": "sprocket314",
+            "type": "1-C-2-1"
+        },
+        {
+            "assetID": "natov-nuhan-kokad-075",
+            "fields": {},
+            "inventoryNonce": 5,
+            "owner": "sprocket314",
+            "type": "1-C-3-1"
+        },
+        {
+            "assetID": "podof-vutam-kiloh-078",
+            "fields": {},
+            "inventoryNonce": 5,
+            "owner": "sprocket314",
+            "type": "1-C-3-1"
+        },
+        {
+            "assetID": "ruzaj-rupik-juhik-247",
+            "fields": {},
+            "inventoryNonce": 5,
+            "owner": "sprocket314",
+            "type": "1-C-3-1"
+        },
+        {
+            "assetID": "savut-dizur-bapap-227",
+            "fields": {},
+            "inventoryNonce": 5,
+            "owner": "sprocket314",
+            "type": "1-C-3-1"
+        },
+        {
+            "assetID": "tirus-zatab-vumab-195",
+            "fields": {},
+            "inventoryNonce": 5,
+            "owner": "sprocket314",
+            "type": "1-C-3-1"
+        },
+        {
+            "assetID": "valav-bidup-popus-221",
+            "fields": {},
+            "inventoryNonce": 5,
+            "owner": "sprocket314",
+            "type": "1-C-3-1"
+        },
+        {
+            "assetID": "zuraf-vukig-pinal-032",
+            "fields": {},
+            "inventoryNonce": 5,
+            "owner": "sprocket314",
+            "type": "1-C-3-1"
+        },
+        {
+            "assetID": "bonot-huluv-rovuh-235",
+            "fields": {},
+            "inventoryNonce": 5,
+            "owner": "sprocket314",
+            "type": "1-C-3-1"
+        },
+        {
+            "assetID": "doran-lupuh-ruran-251",
+            "fields": {},
+            "inventoryNonce": 5,
+            "owner": "sprocket314",
+            "type": "1-C-3-1"
+        },
+        {
+            "assetID": "farad-gatuh-mujiz-045",
+            "fields": {},
+            "inventoryNonce": 6,
+            "owner": "sprocket314",
+            "type": "1-C-4-1"
+        },
+        {
+            "assetID": "gikos-furig-vimak-252",
+            "fields": {},
+            "inventoryNonce": 6,
+            "owner": "sprocket314",
+            "type": "1-C-4-1"
+        },
+        {
+            "assetID": "hopaf-hilav-jafuk-148",
+            "fields": {},
+            "inventoryNonce": 6,
+            "owner": "sprocket314",
+            "type": "1-C-4-1"
+        },
+        {
+            "assetID": "jadiz-hikog-fatam-053",
+            "fields": {},
+            "inventoryNonce": 6,
+            "owner": "sprocket314",
+            "type": "1-C-4-1"
+        },
+        {
+            "assetID": "kabuz-vujak-vadah-145",
+            "fields": {},
+            "inventoryNonce": 6,
+            "owner": "sprocket314",
+            "type": "1-C-4-1"
+        },
+        {
+            "assetID": "lahad-viruk-digal-091",
+            "fields": {},
+            "inventoryNonce": 6,
+            "owner": "sprocket314",
+            "type": "1-C-4-1"
+        },
+        {
+            "assetID": "majir-mokir-sukot-017",
+            "fields": {},
+            "inventoryNonce": 6,
+            "owner": "sprocket314",
+            "type": "1-C-4-1"
+        },
+        {
+            "assetID": "nuhiz-sifoh-gigom-147",
+            "fields": {},
+            "inventoryNonce": 6,
+            "owner": "sprocket314",
+            "type": "1-C-4-1"
+        },
+        {
+            "assetID": "pihaz-ribir-vanah-150",
+            "fields": {},
+            "inventoryNonce": 6,
+            "owner": "sprocket314",
+            "type": "1-C-4-1"
+        },
+        {
+            "assetID": "rapil-tarok-parip-088",
+            "fields": {},
+            "inventoryNonce": 7,
+            "owner": "sprocket314",
+            "type": "1-C-5-1"
+        },
+        {
+            "assetID": "sulat-zogov-zidah-189",
+            "fields": {},
+            "inventoryNonce": 7,
+            "owner": "sprocket314",
+            "type": "1-C-5-1"
+        },
+        {
+            "assetID": "tokoz-nodas-ladas-042",
+            "fields": {},
+            "inventoryNonce": 7,
+            "owner": "sprocket314",
+            "type": "1-C-5-1"
+        },
+        {
+            "assetID": "vufal-momij-jitiv-024",
+            "fields": {},
+            "inventoryNonce": 7,
+            "owner": "sprocket314",
+            "type": "1-C-5-1"
+        },
+        {
+            "assetID": "zaful-rodir-hogih-174",
+            "fields": {},
+            "inventoryNonce": 7,
+            "owner": "sprocket314",
+            "type": "1-C-5-1"
+        },
+        {
+            "assetID": "budir-nozot-litun-034",
+            "fields": {},
+            "inventoryNonce": 7,
+            "owner": "sprocket314",
+            "type": "1-C-5-1"
+        },
+        {
+            "assetID": "dulif-zojun-kulif-195",
+            "fields": {},
+            "inventoryNonce": 7,
+            "owner": "sprocket314",
+            "type": "1-C-5-1"
+        },
+        {
+            "assetID": "filif-kapun-burov-011",
+            "fields": {},
+            "inventoryNonce": 7,
+            "owner": "sprocket314",
+            "type": "1-C-5-1"
+        },
+        {
+            "assetID": "gafik-nutod-zahar-197",
+            "fields": {},
+            "inventoryNonce": 7,
+            "owner": "sprocket314",
+            "type": "1-C-5-1"
+        },
+        {
+            "assetID": "kuzif-bopul-zufag-214",
+            "fields": {},
+            "inventoryNonce": 48,
+            "owner": "sprocket314",
+            "type": "1-C-90-1-O"
+        },
+        {
+            "assetID": "saroz-tihuz-rabof-237",
+            "fields": {},
+            "inventoryNonce": 12,
+            "owner": "sprocket314",
+            "type": "1-C-138-1"
+        },
+        {
+            "assetID": "tifuz-hubav-gobav-080",
+            "fields": {},
+            "inventoryNonce": 13,
+            "owner": "sprocket314",
+            "type": "1-C-140-1"
+        },
+        {
+            "assetID": "vapub-jarop-pogud-239",
+            "fields": {},
+            "inventoryNonce": 14,
+            "owner": "sprocket314",
+            "type": "1-C-141-1"
+        },
+        {
+            "assetID": "zupav-ritap-josif-021",
+            "fields": {},
+            "inventoryNonce": 14,
+            "owner": "sprocket314",
+            "type": "1-C-141-1"
+        },
+        {
+            "assetID": "bofip-natut-vupoz-220",
+            "fields": {},
+            "inventoryNonce": 15,
+            "owner": "sprocket314",
+            "type": "1-C-142-1"
+        },
+        {
+            "assetID": "jijov-zosal-hapib-150",
+            "fields": {},
+            "inventoryNonce": 394,
+            "owner": "sprocket314",
+            "type": "1-C-159-1"
+        },
+        {
+            "assetID": "kibon-turas-sifam-119",
+            "fields": {},
+            "inventoryNonce": 394,
+            "owner": "sprocket314",
+            "type": "1-C-27-1"
+        },
+        {
+            "assetID": "gidub-zotav-domin-152",
+            "fields": {},
+            "inventoryNonce": 16,
+            "owner": "sprocket314",
+            "type": "1-C-143-1"
+        },
+        {
+            "assetID": "honab-timuj-marif-049",
+            "fields": {},
+            "inventoryNonce": 17,
+            "owner": "sprocket314",
+            "type": "1-C-144-1"
+        },
+        {
+            "assetID": "gunag-bukum-lafoj-063",
+            "fields": {},
+            "inventoryNonce": 249,
+            "owner": "sprocket314",
+            "type": "1-C-90-1"
+        },
+        {
+            "assetID": "jirib-napof-gudim-123",
+            "fields": {},
+            "inventoryNonce": 246,
+            "owner": "sprocket314",
+            "type": "1-C-177-1"
+        },
+        {
+            "assetID": "lalub-lahav-torid-065",
+            "fields": {},
+            "inventoryNonce": 19,
+            "owner": "sprocket314",
+            "type": "1-C-146-1"
+        },
+        {
+            "assetID": "makuj-papoj-razon-209",
+            "fields": {},
+            "inventoryNonce": 20,
+            "owner": "sprocket314",
+            "type": "1-C-148-1"
+        },
+        {
+            "assetID": "nulum-mizus-nafig-022",
+            "fields": {},
+            "inventoryNonce": 21,
+            "owner": "sprocket314",
+            "type": "1-C-150-1"
+        },
+        {
+            "assetID": "pigif-husur-datov-227",
+            "fields": {},
+            "inventoryNonce": 22,
+            "owner": "sprocket314",
+            "type": "1-C-151-1"
+        },
+        {
+            "assetID": "ratis-sopip-sonok-198",
+            "fields": {},
+            "inventoryNonce": 23,
+            "owner": "sprocket314",
+            "type": "1-C-155-1"
+        },
+        {
+            "assetID": "sumim-vulib-hihuz-042",
+            "fields": {},
+            "inventoryNonce": 24,
+            "owner": "sprocket314",
+            "type": "1-C-157-1"
+        },
+        {
+            "assetID": "totut-kabul-habun-146",
+            "fields": {},
+            "inventoryNonce": 24,
+            "owner": "sprocket314",
+            "type": "1-C-157-1"
+        },
+        {
+            "assetID": "vutib-fojij-junub-065",
+            "fields": {},
+            "inventoryNonce": 25,
+            "owner": "sprocket314",
+            "type": "1-C-158-1"
+        },
+        {
+            "assetID": "zatip-katoh-vadis-103",
+            "fields": {},
+            "inventoryNonce": 26,
+            "owner": "sprocket314",
+            "type": "1-C-159-1"
+        },
+        {
+            "assetID": "bukoh-gipur-tujiz-068",
+            "fields": {},
+            "inventoryNonce": 26,
+            "owner": "sprocket314",
+            "type": "1-C-159-1"
+        },
+        {
+            "assetID": "dumut-notuj-finaz-229",
+            "fields": {},
+            "inventoryNonce": 27,
+            "owner": "sprocket314",
+            "type": "1-C-162-1"
+        },
+        {
+            "assetID": "fimov-nasup-vinak-140",
+            "fields": {},
+            "inventoryNonce": 28,
+            "owner": "sprocket314",
+            "type": "1-C-164-2"
+        },
+        {
+            "assetID": "ganim-lukaz-bisoh-052",
+            "fields": {},
+            "inventoryNonce": 29,
+            "owner": "sprocket314",
+            "type": "1-C-165-1"
+        },
+        {
+            "assetID": "hudib-pubur-bikuh-181",
+            "fields": {},
+            "inventoryNonce": 30,
+            "owner": "sprocket314",
+            "type": "1-C-166-1"
+        },
+        {
+            "assetID": "jifan-sipag-ladok-094",
+            "fields": {},
+            "inventoryNonce": 31,
+            "owner": "sprocket314",
+            "type": "1-C-168-1"
+        },
+        {
+            "assetID": "kilob-movut-zobus-159",
+            "fields": {},
+            "inventoryNonce": 32,
+            "owner": "sprocket314",
+            "type": "1-C-170-1"
+        },
+        {
+            "assetID": "lirod-vamas-riluf-055",
+            "fields": {},
+            "inventoryNonce": 33,
+            "owner": "sprocket314",
+            "type": "1-C-175-2"
+        },
+        {
+            "assetID": "mivor-hihir-kivig-023",
+            "fields": {},
+            "inventoryNonce": 34,
+            "owner": "sprocket314",
+            "type": "1-C-271-1"
+        },
+        {
+            "assetID": "tohib-bazih-baloz-014",
+            "fields": {},
+            "inventoryNonce": 242,
+            "owner": "sprocket314",
+            "type": "1-C-246-1"
+        },
+        {
+            "assetID": "parad-pivut-bokil-150",
+            "fields": {},
+            "inventoryNonce": 36,
+            "owner": "sprocket314",
+            "type": "1-C-339-1"
+        },
+        {
+            "assetID": "rinum-nijuh-nigit-196",
+            "fields": {},
+            "inventoryNonce": 36,
+            "owner": "sprocket314",
+            "type": "1-C-339-1"
+        },
+        {
+            "assetID": "sosah-zurab-papul-136",
+            "fields": {},
+            "inventoryNonce": 36,
+            "owner": "sprocket314",
+            "type": "1-C-339-1"
+        },
+        {
+            "assetID": "tutur-taboz-mabog-127",
+            "fields": {},
+            "inventoryNonce": 37,
+            "owner": "sprocket314",
+            "type": "1-C-384-1"
+        },
+        {
+            "assetID": "votab-dupop-pusim-115",
+            "fields": {},
+            "inventoryNonce": 38,
+            "owner": "sprocket314",
+            "type": "1-C-389-1"
+        },
+        {
+            "assetID": "zituh-tapin-sifom-011",
+            "fields": {},
+            "inventoryNonce": 39,
+            "owner": "sprocket314",
+            "type": "1-C-397-1"
+        },
+        {
+            "assetID": "dasog-tozoh-panut-100",
+            "fields": {},
+            "inventoryNonce": 42,
+            "owner": "sprocket314",
+            "type": "1-C-12-1"
+        },
+        {
+            "assetID": "fobit-gimuj-tufis-024",
+            "fields": {},
+            "inventoryNonce": 42,
+            "owner": "sprocket314",
+            "type": "1-C-277-1"
+        },
+        {
+            "assetID": "gunag-sukum-lafoj-051",
+            "fields": {},
+            "inventoryNonce": 42,
+            "owner": "sprocket314",
+            "type": "1-C-342-1"
+        },
+        {
+            "assetID": "hadah-lavid-fukom-163",
+            "fields": {},
+            "inventoryNonce": 42,
+            "owner": "sprocket314",
+            "type": "1-C-384-1"
+        },
+        {
+            "assetID": "gusoh-pigol-makif-131",
+            "fields": {},
+            "inventoryNonce": 382,
+            "owner": "sprocket314",
+            "type": "1-C-77-1"
+        },
+        {
+            "assetID": "kozad-bitur-zidon-001",
+            "fields": {},
+            "inventoryNonce": 43,
+            "owner": "sprocket314",
+            "type": "1-C-205-1"
+        },
+        {
+            "assetID": "logig-sibim-luvoj-051",
+            "fields": {},
+            "inventoryNonce": 43,
+            "owner": "sprocket314",
+            "type": "1-C-25-1"
+        },
+        {
+            "assetID": "mopil-nomok-tosuk-179",
+            "fields": {},
+            "inventoryNonce": 44,
+            "owner": "sprocket314",
+            "type": "1-C-97-1"
+        },
+        {
+            "assetID": "kokab-juzoz-jakog-171",
+            "fields": {},
+            "inventoryNonce": 56,
+            "owner": "sprocket314",
+            "type": "1-C-42-1"
+        },
+        {
+            "assetID": "zohop-diran-gihaz-193",
+            "fields": {},
+            "inventoryNonce": 61,
+            "owner": "sprocket314",
+            "type": "1-C-137-1"
+        },
+        {
+            "assetID": "valav-batup-popus-234",
+            "fields": {},
+            "inventoryNonce": 426,
+            "owner": "sprocket314",
+            "type": "1-C-37-1"
+        },
+        {
+            "assetID": "gazoh-kavir-dugad-180",
+            "fields": {},
+            "inventoryNonce": 72,
+            "owner": "sprocket314",
+            "type": "1-C-20-1"
+        },
+        {
+            "assetID": "sopul-gatuz-famom-008",
+            "fields": {},
+            "inventoryNonce": 77,
+            "owner": "sprocket314",
+            "type": "1-C-276-1-O"
+        },
+        {
+            "assetID": "ludog-masuk-lufok-187",
+            "fields": {},
+            "inventoryNonce": 92,
+            "owner": "sprocket314",
+            "type": "1-C-129-1"
+        },
+        {
+            "assetID": "nuhuz-sifoh-gigom-139",
+            "fields": {},
+            "inventoryNonce": 102,
+            "owner": "sprocket314",
+            "type": "1-C-73-1"
+        },
+        {
+            "assetID": "filif-kopun-burov-235",
+            "fields": {},
+            "inventoryNonce": 107,
+            "owner": "sprocket314",
+            "type": "1-C-391-1"
+        },
+        {
+            "assetID": "hahih-mujaf-rifob-123",
+            "fields": {},
+            "inventoryNonce": 383,
+            "owner": "sprocket314",
+            "type": "1-C-150-1"
+        },
+        {
+            "assetID": "fibiz-nasup-vinak-130",
+            "fields": {},
+            "inventoryNonce": 122,
+            "owner": "sprocket314",
+            "type": "1-C-102-1"
+        },
+        {
+            "assetID": "fodub-duhav-jizoh-096",
+            "fields": {},
+            "inventoryNonce": 382,
+            "owner": "sprocket314",
+            "type": "1-C-74-1"
+        },
+        {
+            "assetID": "rinuk-mijuh-nigit-229",
+            "fields": {},
+            "inventoryNonce": 127,
+            "owner": "sprocket314",
+            "type": "1-C-18-1-O"
+        },
+        {
+            "assetID": "bonon-huluv-rovuh-043",
+            "fields": {},
+            "inventoryNonce": 97,
+            "owner": "sprocket314",
+            "type": "1-C-100-1"
+        },
+        {
+            "assetID": "hadar-lavid-fukom-051",
+            "fields": {},
+            "inventoryNonce": 132,
+            "owner": "sprocket314",
+            "type": "1-C-276-1-O"
+        },
+        {
+            "assetID": "tatih-dasud-dasiv-100",
+            "fields": {},
+            "inventoryNonce": 137,
+            "owner": "sprocket314",
+            "type": "1-C-32-2-O"
+        },
+        {
+            "assetID": "kuzif-bohol-zufag-091",
+            "fields": {},
+            "inventoryNonce": 142,
+            "owner": "sprocket314",
+            "type": "1-C-278-1-O"
+        },
+        {
+            "assetID": "bofip-jutut-vupoz-176",
+            "fields": {},
+            "inventoryNonce": 112,
+            "owner": "sprocket314",
+            "type": "1-C-138-1-O"
+        },
+        {
+            "assetID": "zunur-fumoj-funaf-163",
+            "fields": {},
+            "inventoryNonce": 147,
+            "owner": "sprocket314",
+            "type": "1-C-43-1"
+        },
+        {
+            "assetID": "pofim-pizig-mojun-188",
+            "fields": {},
+            "inventoryNonce": 152,
+            "owner": "sprocket314",
+            "type": "1-C-136-1"
+        },
+        {
+            "assetID": "girin-soruk-golaf-057",
+            "fields": {},
+            "inventoryNonce": 157,
+            "owner": "sprocket314",
+            "type": "1-C-388-1"
+        },
+        {
+            "assetID": "sukuz-vuruz-jabid-050",
+            "fields": {},
+            "inventoryNonce": 162,
+            "owner": "sprocket314",
+            "type": "1-C-135-1"
+        },
+        {
+            "assetID": "vozim-garar-popog-050",
+            "fields": {},
+            "inventoryNonce": 172,
+            "owner": "sprocket314",
+            "type": "1-C-102-1"
+        },
+        {
+            "assetID": "jimam-fusih-modan-248",
+            "fields": {},
+            "inventoryNonce": 167,
+            "owner": "sprocket314",
+            "type": "1-C-94-1-O"
+        },
+        {
+            "assetID": "lodut-lavir-ridig-240",
+            "fields": {},
+            "inventoryNonce": 177,
+            "owner": "sprocket314",
+            "type": "1-C-169-1"
+        },
+        {
+            "assetID": "vobad-ropop-gudog-194",
+            "fields": {},
+            "inventoryNonce": 53,
+            "owner": "sprocket314",
+            "type": "1-C-159-1"
+        },
+        {
+            "assetID": "doran-lurah-ruran-199",
+            "fields": {},
+            "inventoryNonce": 444,
+            "owner": "sprocket314",
+            "type": "1-C-95-1"
+        },
+        {
+            "assetID": "nakar-lavad-nonod-169",
+            "fields": {},
+            "inventoryNonce": 277,
+            "owner": "sprocket314",
+            "type": "1-C-147-1"
+        },
+        {
+            "assetID": "kuzif-bomal-zufag-098",
+            "fields": {},
+            "inventoryNonce": 277,
+            "owner": "sprocket314",
+            "type": "1-C-201-1"
+        },
+        {
+            "assetID": "foduh-tuhav-jizoh-020",
+            "fields": {},
+            "inventoryNonce": 53,
+            "owner": "sprocket314",
+            "type": "1-C-340-1"
+        },
+        {
+            "assetID": "gusas-rigol-makif-010",
+            "fields": {},
+            "inventoryNonce": 54,
+            "owner": "sprocket314",
+            "type": "1-C-115-1"
+        },
+        {
+            "assetID": "habil-mujaf-rifob-076",
+            "fields": {},
+            "inventoryNonce": 54,
+            "owner": "sprocket314",
+            "type": "1-C-14-1"
+        },
+        {
+            "assetID": "jolub-fivaj-kogob-059",
+            "fields": {},
+            "inventoryNonce": 55,
+            "owner": "sprocket314",
+            "type": "1-C-34-1"
+        },
+        {
+            "assetID": "hubal-gazob-nigih-113",
+            "fields": {},
+            "inventoryNonce": 245,
+            "owner": "sprocket314",
+            "type": "1-C-82-1"
+        },
+        {
+            "assetID": "morik-lipap-kiraz-177",
+            "fields": {},
+            "inventoryNonce": 58,
+            "owner": "sprocket314",
+            "type": "1-C-343-1"
+        },
+        {
+            "assetID": "nipak-zusif-figig-153",
+            "fields": {},
+            "inventoryNonce": 58,
+            "owner": "sprocket314",
+            "type": "1-C-343-1"
+        },
+        {
+            "assetID": "pukob-tazuk-birog-247",
+            "fields": {},
+            "inventoryNonce": 58,
+            "owner": "sprocket314",
+            "type": "1-C-59-1"
+        },
+        {
+            "assetID": "rohag-rokof-ripot-091",
+            "fields": {},
+            "inventoryNonce": 58,
+            "owner": "sprocket314",
+            "type": "1-C-77-1"
+        },
+        {
+            "assetID": "sitod-puzid-bidiz-052",
+            "fields": {},
+            "inventoryNonce": 59,
+            "owner": "sprocket314",
+            "type": "1-C-215-1"
+        },
+        {
+            "assetID": "tasod-bulad-bunul-233",
+            "fields": {},
+            "inventoryNonce": 59,
+            "owner": "sprocket314",
+            "type": "1-C-22-1"
+        },
+        {
+            "assetID": "dokol-gidir-zohof-135",
+            "fields": {},
+            "inventoryNonce": 273,
+            "owner": "sprocket314",
+            "type": "1-C-216-1"
+        },
+        {
+            "assetID": "bizif-tanoz-kulit-247",
+            "fields": {},
+            "inventoryNonce": 63,
+            "owner": "sprocket314",
+            "type": "1-C-103-1"
+        },
+        {
+            "assetID": "ditol-lokul-najos-254",
+            "fields": {},
+            "inventoryNonce": 63,
+            "owner": "sprocket314",
+            "type": "1-C-339-1"
+        },
+        {
+            "assetID": "fudon-punas-rovin-120",
+            "fields": {},
+            "inventoryNonce": 63,
+            "owner": "sprocket314",
+            "type": "1-C-44-1"
+        },
+        {
+            "assetID": "gohav-todug-haran-253",
+            "fields": {},
+            "inventoryNonce": 63,
+            "owner": "sprocket314",
+            "type": "1-C-59-1"
+        },
+        {
+            "assetID": "hibov-burah-kuhad-139",
+            "fields": {},
+            "inventoryNonce": 63,
+            "owner": "sprocket314",
+            "type": "1-C-70-2"
+        },
+        {
+            "assetID": "jurod-hosip-salad-073",
+            "fields": {},
+            "inventoryNonce": 64,
+            "owner": "sprocket314",
+            "type": "1-C-14-1"
+        },
+        {
+            "assetID": "rukir-ririj-ginig-214",
+            "fields": {},
+            "inventoryNonce": 278,
+            "owner": "sprocket314",
+            "type": "1-C-133-1"
+        },
+        {
+            "assetID": "lupim-gafaz-kutom-079",
+            "fields": {
+                "ARTIST": {
+                    "type": "STRING",
+                    "value": "(Custom)"
+                },
+                "C_ART": {
+                    "type": "NUMERIC",
+                    "value": 1
+                },
+                "IMAGE": {
+                    "type": "STRING",
+                    "value": "https://i.imgur.com/c6ZlD8h.jpg"
+                }
+            },
+            "inventoryNonce": 432,
+            "owner": "sprocket314",
+            "type": "1-C-178-1"
+        },
+        {
+            "assetID": "johog-jonum-bigaf-191",
+            "fields": {},
+            "inventoryNonce": 82,
+            "owner": "sprocket314",
+            "type": "1-C-71-1"
+        },
+        {
+            "assetID": "rarok-lagup-kofuk-070",
+            "fields": {},
+            "inventoryNonce": 69,
+            "owner": "sprocket314",
+            "type": "1-C-274-1"
+        },
+        {
+            "assetID": "sukuz-kapuz-jabid-170",
+            "fields": {},
+            "inventoryNonce": 69,
+            "owner": "sprocket314",
+            "type": "1-C-28-1"
+        },
+        {
+            "assetID": "togun-zirib-sudib-018",
+            "fields": {},
+            "inventoryNonce": 69,
+            "owner": "sprocket314",
+            "type": "1-C-342-1"
+        },
+        {
+            "assetID": "vurub-lamak-jijil-193",
+            "fields": {},
+            "inventoryNonce": 69,
+            "owner": "sprocket314",
+            "type": "1-C-44-1"
+        },
+        {
+            "assetID": "zagis-lopih-ranuh-231",
+            "fields": {},
+            "inventoryNonce": 69,
+            "owner": "sprocket314",
+            "type": "1-C-7-1"
+        },
+        {
+            "assetID": "busan-vukul-juloh-196",
+            "fields": {},
+            "inventoryNonce": 70,
+            "owner": "sprocket314",
+            "type": "1-C-231-1"
+        },
+        {
+            "assetID": "dupaz-vilok-zinaj-101",
+            "fields": {},
+            "inventoryNonce": 70,
+            "owner": "sprocket314",
+            "type": "1-C-29-1"
+        },
+        {
+            "assetID": "fipak-polob-zopuj-012",
+            "fields": {
+                "ARTIST": {
+                    "type": "STRING",
+                    "value": "(Custom)"
+                },
+                "C_ART": {
+                    "type": "NUMERIC",
+                    "value": 1
+                },
+                "IMAGE": {
+                    "type": "STRING",
+                    "value": "https://i.imgur.com/QzD7Tbc.jpg"
+                }
+            },
+            "inventoryNonce": 456,
+            "owner": "sprocket314",
+            "type": "1-C-180-1"
+        },
+        {
+            "assetID": "huluh-hamog-sufan-053",
+            "fields": {},
+            "inventoryNonce": 74,
+            "owner": "sprocket314",
+            "type": "1-C-164-2"
+        },
+        {
+            "assetID": "jibun-fusih-modan-222",
+            "fields": {},
+            "inventoryNonce": 74,
+            "owner": "sprocket314",
+            "type": "1-C-44-1"
+        },
+        {
+            "assetID": "kidop-zizuf-salob-031",
+            "fields": {},
+            "inventoryNonce": 74,
+            "owner": "sprocket314",
+            "type": "1-C-53-1"
+        },
+        {
+            "assetID": "linub-fazot-tomod-183",
+            "fields": {},
+            "inventoryNonce": 74,
+            "owner": "sprocket314",
+            "type": "1-C-64-1"
+        },
+        {
+            "assetID": "mibid-jupin-lusor-151",
+            "fields": {},
+            "inventoryNonce": 74,
+            "owner": "sprocket314",
+            "type": "1-C-7-1"
+        },
+        {
+            "assetID": "noduv-logih-pipih-160",
+            "fields": {},
+            "inventoryNonce": 75,
+            "owner": "sprocket314",
+            "type": "1-C-229-1"
+        },
+        {
+            "assetID": "panon-zigap-junad-022",
+            "fields": {},
+            "inventoryNonce": 75,
+            "owner": "sprocket314",
+            "type": "1-C-379-1"
+        },
+        {
+            "assetID": "rigit-vakoj-tajot-068",
+            "fields": {},
+            "inventoryNonce": 76,
+            "owner": "sprocket314",
+            "type": "1-C-171-1"
+        },
+        {
+            "assetID": "tugog-zukub-mugob-255",
+            "fields": {},
+            "inventoryNonce": 79,
+            "owner": "sprocket314",
+            "type": "1-C-138-1"
+        },
+        {
+            "assetID": "vozim-gahar-popog-243",
+            "fields": {},
+            "inventoryNonce": 79,
+            "owner": "sprocket314",
+            "type": "1-C-32-2"
+        },
+        {
+            "assetID": "zigom-zajum-kifun-139",
+            "fields": {},
+            "inventoryNonce": 79,
+            "owner": "sprocket314",
+            "type": "1-C-59-1"
+        },
+        {
+            "assetID": "bamat-luvup-vuhok-033",
+            "fields": {},
+            "inventoryNonce": 79,
+            "owner": "sprocket314",
+            "type": "1-C-65-1"
+        },
+        {
+            "assetID": "daput-ruhuv-ranoh-228",
+            "fields": {},
+            "inventoryNonce": 79,
+            "owner": "sprocket314",
+            "type": "1-C-96-1"
+        },
+        {
+            "assetID": "fofis-hizad-vijur-152",
+            "fields": {},
+            "inventoryNonce": 80,
+            "owner": "sprocket314",
+            "type": "1-C-115-1"
+        },
+        {
+            "assetID": "vifud-bakij-jilog-099",
+            "fields": {},
+            "inventoryNonce": 338,
+            "owner": "sprocket314",
+            "type": "1-C-387-1"
+        },
+        {
+            "assetID": "honam-jimuj-marif-185",
+            "fields": {},
+            "inventoryNonce": 262,
+            "owner": "sprocket314",
+            "type": "1-C-197-1"
+        },
+        {
+            "assetID": "kodaj-zuvuj-mivad-129",
+            "fields": {},
+            "inventoryNonce": 84,
+            "owner": "sprocket314",
+            "type": "1-C-166-1"
+        },
+        {
+            "assetID": "lodud-havir-ridig-179",
+            "fields": {},
+            "inventoryNonce": 84,
+            "owner": "sprocket314",
+            "type": "1-C-174-1"
+        },
+        {
+            "assetID": "mohof-pojuf-zonil-051",
+            "fields": {},
+            "inventoryNonce": 84,
+            "owner": "sprocket314",
+            "type": "1-C-28-1"
+        },
+        {
+            "assetID": "niniz-gunaf-tataf-172",
+            "fields": {},
+            "inventoryNonce": 84,
+            "owner": "sprocket314",
+            "type": "1-C-53-1"
+        },
+        {
+            "assetID": "pudat-surib-tovan-116",
+            "fields": {},
+            "inventoryNonce": 84,
+            "owner": "sprocket314",
+            "type": "1-C-7-1"
+        },
+        {
+            "assetID": "rolop-tisar-pipar-080",
+            "fields": {},
+            "inventoryNonce": 85,
+            "owner": "sprocket314",
+            "type": "1-C-221-1"
+        },
+        {
+            "assetID": "sivur-dovul-dahih-063",
+            "fields": {},
+            "inventoryNonce": 85,
+            "owner": "sprocket314",
+            "type": "1-C-25-1"
+        },
+        {
+            "assetID": "taziv-lukab-zihab-116",
+            "fields": {},
+            "inventoryNonce": 86,
+            "owner": "sprocket314",
+            "type": "1-C-234-1"
+        },
+        {
+            "assetID": "zolad-zipod-tohog-225",
+            "fields": {},
+            "inventoryNonce": 89,
+            "owner": "sprocket314",
+            "type": "1-C-108-1"
+        },
+        {
+            "assetID": "bibip-zotuj-tunat-047",
+            "fields": {},
+            "inventoryNonce": 89,
+            "owner": "sprocket314",
+            "type": "1-C-141-1"
+        },
+        {
+            "assetID": "gamak-risub-dufik-092",
+            "fields": {
+                "OCLOUT": {
+                    "type": "NUMERIC",
+                    "value": 2
+                },
+                "RARITY": {
+                    "type": "STRING",
+                    "value": "crafted"
+                },
+                "TCLOUT": {
+                    "type": "NUMERIC",
+                    "value": 3
+                },
+                "USED_SLOTS": {
+                    "type": "NUMERIC",
+                    "value": 1
+                },
+                "attack": {
+                    "type": "STRING",
+                    "value": "3"
+                },
+                "clout": {
+                    "type": "STRING",
+                    "value": "3<$icon_y:-20%><@T><$> 2<$icon_y:-20%><@O><$> "
+                },
+                "defense": {
+                    "type": "STRING",
+                    "value": "2"
+                },
+                "layout": {
+                    "type": "STRING",
+                    "value": "main, 1slot, mortal,T"
+                },
+                "rarity": {
+                    "type": "STRING",
+                    "value": "<$b #006600>CRAFTED<$>"
+                },
+                "rules": {
+                    "type": "STRING",
+                    "value": "Destroyed - Each opponent discards a card.\r\n<$c 60% icon_fit:none><@divider-large><$>\r\nHit - Each opponent discards a card."
+                },
+                "slot": {
+                    "type": "STRING",
+                    "value": "<@one-aug>"
+                },
+                "totalclout": {
+                    "type": "NUMERIC",
+                    "value": 5
+                }
+            },
+            "inventoryNonce": 314,
+            "owner": "sprocket314",
+            "type": "1-C-270-1"
+        },
+        {
+            "assetID": "fukom-novif-supol-191",
+            "fields": {},
+            "inventoryNonce": 89,
+            "owner": "sprocket314",
+            "type": "1-C-164-2"
+        },
+        {
+            "assetID": "goguf-nimut-kazah-241",
+            "fields": {},
+            "inventoryNonce": 89,
+            "owner": "sprocket314",
+            "type": "1-C-342-1"
+        },
+        {
+            "assetID": "hizad-dapub-zobik-247",
+            "fields": {},
+            "inventoryNonce": 90,
+            "owner": "sprocket314",
+            "type": "1-C-29-1"
+        },
+        {
+            "assetID": "jumal-pagud-dokah-145",
+            "fields": {},
+            "inventoryNonce": 90,
+            "owner": "sprocket314",
+            "type": "1-C-81-1"
+        },
+        {
+            "assetID": "kudap-vutur-busif-086",
+            "fields": {},
+            "inventoryNonce": 91,
+            "owner": "sprocket314",
+            "type": "1-C-160-1"
+        },
+        {
+            "assetID": "mumaj-hiroj-viguv-126",
+            "fields": {},
+            "inventoryNonce": 94,
+            "owner": "sprocket314",
+            "type": "1-C-125-1"
+        },
+        {
+            "assetID": "zimir-mojos-nafoz-121",
+            "fields": {},
+            "inventoryNonce": 382,
+            "owner": "sprocket314",
+            "type": "1-C-32-2"
+        },
+        {
+            "assetID": "podok-vutam-kiloh-014",
+            "fields": {},
+            "inventoryNonce": 94,
+            "owner": "sprocket314",
+            "type": "1-C-166-1"
+        },
+        {
+            "assetID": "ruzaj-rumik-juhik-119",
+            "fields": {},
+            "inventoryNonce": 94,
+            "owner": "sprocket314",
+            "type": "1-C-31-1"
+        },
+        {
+            "assetID": "savut-bizur-bapap-228",
+            "fields": {},
+            "inventoryNonce": 94,
+            "owner": "sprocket314",
+            "type": "1-C-384-1"
+        },
+        {
+            "assetID": "tirus-zotab-vumab-163",
+            "fields": {},
+            "inventoryNonce": 95,
+            "owner": "sprocket314",
+            "type": "1-C-165-1"
+        },
+        {
+            "assetID": "valav-badup-popus-237",
+            "fields": {},
+            "inventoryNonce": 95,
+            "owner": "sprocket314",
+            "type": "1-C-395-1"
+        },
+        {
+            "assetID": "zuraf-vuhig-pinal-160",
+            "fields": {},
+            "inventoryNonce": 96,
+            "owner": "sprocket314",
+            "type": "1-C-54-1"
+        },
+        {
+            "assetID": "bohom-zirur-pugip-028",
+            "fields": {},
+            "inventoryNonce": 415,
+            "owner": "sprocket314",
+            "type": "1-C-55-1"
+        },
+        {
+            "assetID": "hufih-momas-rahot-058",
+            "fields": {},
+            "inventoryNonce": 394,
+            "owner": "sprocket314",
+            "type": "1-C-13-1"
+        },
+        {
+            "assetID": "gikos-burig-vimak-254",
+            "fields": {},
+            "inventoryNonce": 99,
+            "owner": "sprocket314",
+            "type": "1-C-341-1"
+        },
+        {
+            "assetID": "hopaf-bilav-jafuk-152",
+            "fields": {},
+            "inventoryNonce": 99,
+            "owner": "sprocket314",
+            "type": "1-C-49-1"
+        },
+        {
+            "assetID": "zusat-fokif-lomav-030",
+            "fields": {},
+            "inventoryNonce": 410,
+            "owner": "sprocket314",
+            "type": "1-C-144-1"
+        },
+        {
+            "assetID": "kahuz-vujak-vadah-144",
+            "fields": {},
+            "inventoryNonce": 100,
+            "owner": "sprocket314",
+            "type": "1-C-122-1"
+        },
+        {
+            "assetID": "jadit-hikog-fatam-085",
+            "fields": {},
+            "inventoryNonce": 403,
+            "owner": "sprocket314",
+            "type": "1-C-394-1"
+        },
+        {
+            "assetID": "majip-mokir-sukot-033",
+            "fields": {},
+            "inventoryNonce": 101,
+            "owner": "sprocket314",
+            "type": "1-C-104-1"
+        },
+        {
+            "assetID": "pisaz-ribir-vanah-148",
+            "fields": {},
+            "inventoryNonce": 104,
+            "owner": "sprocket314",
+            "type": "1-C-108-1"
+        },
+        {
+            "assetID": "rapil-sarok-parip-089",
+            "fields": {},
+            "inventoryNonce": 104,
+            "owner": "sprocket314",
+            "type": "1-C-109-1"
+        },
+        {
+            "assetID": "sulat-zodov-zidah-061",
+            "fields": {},
+            "inventoryNonce": 104,
+            "owner": "sprocket314",
+            "type": "1-C-145-1"
+        },
+        {
+            "assetID": "tokoz-todas-ladas-038",
+            "fields": {},
+            "inventoryNonce": 104,
+            "owner": "sprocket314",
+            "type": "1-C-27-1"
+        },
+        {
+            "assetID": "vufal-bomij-jitiv-032",
+            "fields": {},
+            "inventoryNonce": 104,
+            "owner": "sprocket314",
+            "type": "1-C-80-1"
+        },
+        {
+            "assetID": "jadin-jikog-fatam-148",
+            "fields": {},
+            "inventoryNonce": 278,
+            "owner": "sprocket314",
+            "type": "1-C-214-1"
+        },
+        {
+            "assetID": "budig-nozot-litun-162",
+            "fields": {},
+            "inventoryNonce": 105,
+            "owner": "sprocket314",
+            "type": "1-C-393-1"
+        },
+        {
+            "assetID": "dulif-zolun-kulif-067",
+            "fields": {},
+            "inventoryNonce": 106,
+            "owner": "sprocket314",
+            "type": "1-C-386-1"
+        },
+        {
+            "assetID": "munuf-jajup-jolus-182",
+            "fields": {},
+            "inventoryNonce": 109,
+            "owner": "sprocket314",
+            "type": "1-C-12-1"
+        },
+        {
+            "assetID": "pakap-malub-pitif-127",
+            "fields": {},
+            "inventoryNonce": 377,
+            "owner": "sprocket314",
+            "type": "1-C-96-1"
+        },
+        {
+            "assetID": "rikuv-pulit-hikuh-200",
+            "fields": {},
+            "inventoryNonce": 397,
+            "owner": "sprocket314",
+            "type": "1-C-378-1"
+        },
+        {
+            "assetID": "rukir-gonij-ginig-078",
+            "fields": {},
+            "inventoryNonce": 109,
+            "owner": "sprocket314",
+            "type": "1-C-6-1"
+        },
+        {
+            "assetID": "finiv-tifaz-polif-044",
+            "fields": {},
+            "inventoryNonce": 244,
+            "owner": "sprocket314",
+            "type": "1-C-70-2"
+        },
+        {
+            "assetID": "tifuz-kubav-gobav-078",
+            "fields": {},
+            "inventoryNonce": 110,
+            "owner": "sprocket314",
+            "type": "1-C-396-1"
+        },
+        {
+            "assetID": "vapub-harop-pogud-240",
+            "fields": {},
+            "inventoryNonce": 110,
+            "owner": "sprocket314",
+            "type": "1-C-56-1"
+        },
+        {
+            "assetID": "zupav-gitap-josif-029",
+            "fields": {},
+            "inventoryNonce": 111,
+            "owner": "sprocket314",
+            "type": "1-C-386-1"
+        },
+        {
+            "assetID": "dosat-huvuf-nohol-135",
+            "fields": {},
+            "inventoryNonce": 114,
+            "owner": "sprocket314",
+            "type": "1-C-266-1"
+        },
+        {
+            "assetID": "famoz-havij-zohag-201",
+            "fields": {},
+            "inventoryNonce": 114,
+            "owner": "sprocket314",
+            "type": "1-C-340-1"
+        },
+        {
+            "assetID": "giduv-votav-domin-185",
+            "fields": {},
+            "inventoryNonce": 114,
+            "owner": "sprocket314",
+            "type": "1-C-66-1"
+        },
+        {
+            "assetID": "honas-vimuj-marif-112",
+            "fields": {},
+            "inventoryNonce": 114,
+            "owner": "sprocket314",
+            "type": "1-C-7-1"
+        },
+        {
+            "assetID": "jafoh-dajon-gobig-002",
+            "fields": {},
+            "inventoryNonce": 114,
+            "owner": "sprocket314",
+            "type": "1-C-74-1"
+        },
+        {
+            "assetID": "kagib-hosuv-limiv-038",
+            "fields": {},
+            "inventoryNonce": 115,
+            "owner": "sprocket314",
+            "type": "1-C-119-1"
+        },
+        {
+            "assetID": "lalub-lulav-torid-081",
+            "fields": {},
+            "inventoryNonce": 115,
+            "owner": "sprocket314",
+            "type": "1-C-220-1"
+        },
+        {
+            "assetID": "makuj-japoj-razon-214",
+            "fields": {},
+            "inventoryNonce": 116,
+            "owner": "sprocket314",
+            "type": "1-C-248-1"
+        },
+        {
+            "assetID": "pigif-hirur-datov-068",
+            "fields": {},
+            "inventoryNonce": 119,
+            "owner": "sprocket314",
+            "type": "1-C-12-1"
+        },
+        {
+            "assetID": "ratig-sopip-sonok-086",
+            "fields": {},
+            "inventoryNonce": 119,
+            "owner": "sprocket314",
+            "type": "1-C-164-2"
+        },
+        {
+            "assetID": "sumuz-vulib-hihuz-178",
+            "fields": {},
+            "inventoryNonce": 119,
+            "owner": "sprocket314",
+            "type": "1-C-249-1"
+        },
+        {
+            "assetID": "sumus-vulib-hihuz-226",
+            "fields": {},
+            "inventoryNonce": 401,
+            "owner": "sprocket314",
+            "type": "1-C-240-1"
+        },
+        {
+            "assetID": "vutim-jojij-junub-190",
+            "fields": {},
+            "inventoryNonce": 119,
+            "owner": "sprocket314",
+            "type": "1-C-77-1"
+        },
+        {
+            "assetID": "zatij-katoh-vadis-183",
+            "fields": {},
+            "inventoryNonce": 120,
+            "owner": "sprocket314",
+            "type": "1-C-16-1"
+        },
+        {
+            "assetID": "bukoh-rorur-tujiz-236",
+            "fields": {},
+            "inventoryNonce": 120,
+            "owner": "sprocket314",
+            "type": "1-C-189-1"
+        },
+        {
+            "assetID": "dumip-notuj-finaz-029",
+            "fields": {},
+            "inventoryNonce": 121,
+            "owner": "sprocket314",
+            "type": "1-C-401-1"
+        },
+        {
+            "assetID": "ganil-lukaz-bisoh-068",
+            "fields": {},
+            "inventoryNonce": 124,
+            "owner": "sprocket314",
+            "type": "1-C-118-1"
+        },
+        {
+            "assetID": "hudim-tubur-bikuh-050",
+            "fields": {},
+            "inventoryNonce": 124,
+            "owner": "sprocket314",
+            "type": "1-C-274-1"
+        },
+        {
+            "assetID": "jifan-fapag-ladok-120",
+            "fields": {},
+            "inventoryNonce": 124,
+            "owner": "sprocket314",
+            "type": "1-C-277-1"
+        },
+        {
+            "assetID": "kilob-manut-zobus-000",
+            "fields": {},
+            "inventoryNonce": 124,
+            "owner": "sprocket314",
+            "type": "1-C-64-1"
+        },
+        {
+            "assetID": "lirod-vozas-riluf-086",
+            "fields": {},
+            "inventoryNonce": 124,
+            "owner": "sprocket314",
+            "type": "1-C-77-1"
+        },
+        {
+            "assetID": "mivor-pahir-kivig-033",
+            "fields": {},
+            "inventoryNonce": 125,
+            "owner": "sprocket314",
+            "type": "1-C-395-1"
+        },
+        {
+            "assetID": "norih-sobiv-hanon-227",
+            "fields": {},
+            "inventoryNonce": 125,
+            "owner": "sprocket314",
+            "type": "1-C-90-1"
+        },
+        {
+            "assetID": "parad-potut-bokil-198",
+            "fields": {},
+            "inventoryNonce": 126,
+            "owner": "sprocket314",
+            "type": "1-C-245-1"
+        },
+        {
+            "assetID": "sosul-zurab-papul-076",
+            "fields": {},
+            "inventoryNonce": 129,
+            "owner": "sprocket314",
+            "type": "1-C-10-1"
+        },
+        {
+            "assetID": "tutug-paboz-mabog-002",
+            "fields": {},
+            "inventoryNonce": 129,
+            "owner": "sprocket314",
+            "type": "1-C-118-1"
+        },
+        {
+            "assetID": "votas-fupop-pusim-178",
+            "fields": {},
+            "inventoryNonce": 129,
+            "owner": "sprocket314",
+            "type": "1-C-28-1"
+        },
+        {
+            "assetID": "zitup-sapin-sifom-172",
+            "fields": {},
+            "inventoryNonce": 129,
+            "owner": "sprocket314",
+            "type": "1-C-348-1"
+        },
+        {
+            "assetID": "bakok-tizir-zopug-150",
+            "fields": {},
+            "inventoryNonce": 129,
+            "owner": "sprocket314",
+            "type": "1-C-53-1"
+        },
+        {
+            "assetID": "dabig-tozoh-panut-107",
+            "fields": {},
+            "inventoryNonce": 130,
+            "owner": "sprocket314",
+            "type": "1-C-197-1"
+        },
+        {
+            "assetID": "fobov-gimuj-tufis-004",
+            "fields": {},
+            "inventoryNonce": 130,
+            "owner": "sprocket314",
+            "type": "1-C-215-1"
+        },
+        {
+            "assetID": "gunar-rukum-lafoj-180",
+            "fields": {},
+            "inventoryNonce": 131,
+            "owner": "sprocket314",
+            "type": "1-C-19-1"
+        },
+        {
+            "assetID": "jofaf-jahik-vafat-115",
+            "fields": {},
+            "inventoryNonce": 134,
+            "owner": "sprocket314",
+            "type": "1-C-138-1"
+        },
+        {
+            "assetID": "vabiz-popov-simub-064",
+            "fields": {},
+            "inventoryNonce": 405,
+            "owner": "sprocket314",
+            "type": "1-C-143-1"
+        },
+        {
+            "assetID": "logig-sizim-luvoj-112",
+            "fields": {},
+            "inventoryNonce": 134,
+            "owner": "sprocket314",
+            "type": "1-C-277-1"
+        },
+        {
+            "assetID": "mopil-jimok-tosuk-199",
+            "fields": {},
+            "inventoryNonce": 134,
+            "owner": "sprocket314",
+            "type": "1-C-384-1"
+        },
+        {
+            "assetID": "nihad-lomat-humak-071",
+            "fields": {},
+            "inventoryNonce": 278,
+            "owner": "sprocket314",
+            "type": "1-C-86-1"
+        },
+        {
+            "assetID": "puzan-bitoz-kahup-117",
+            "fields": {},
+            "inventoryNonce": 135,
+            "owner": "sprocket314",
+            "type": "1-C-16-1"
+        },
+        {
+            "assetID": "rojut-bupon-fukop-019",
+            "fields": {},
+            "inventoryNonce": 135,
+            "owner": "sprocket314",
+            "type": "1-C-175-2"
+        },
+        {
+            "assetID": "sisur-zujab-jatur-161",
+            "fields": {},
+            "inventoryNonce": 136,
+            "owner": "sprocket314",
+            "type": "1-C-172-1"
+        },
+        {
+            "assetID": "vijak-nijij-tivas-051",
+            "fields": {},
+            "inventoryNonce": 139,
+            "owner": "sprocket314",
+            "type": "1-C-138-1"
+        },
+        {
+            "assetID": "zotuj-nihuf-nuhad-162",
+            "fields": {},
+            "inventoryNonce": 139,
+            "owner": "sprocket314",
+            "type": "1-C-275-1"
+        },
+        {
+            "assetID": "bipat-puvuk-zijul-153",
+            "fields": {},
+            "inventoryNonce": 139,
+            "owner": "sprocket314",
+            "type": "1-C-31-1"
+        },
+        {
+            "assetID": "dihok-pizin-hifur-197",
+            "fields": {},
+            "inventoryNonce": 139,
+            "owner": "sprocket314",
+            "type": "1-C-348-1"
+        },
+        {
+            "assetID": "fuhat-lobur-pujom-023",
+            "fields": {},
+            "inventoryNonce": 139,
+            "owner": "sprocket314",
+            "type": "1-C-375-1"
+        },
+        {
+            "assetID": "gojot-tiris-gaduf-178",
+            "fields": {},
+            "inventoryNonce": 140,
+            "owner": "sprocket314",
+            "type": "1-C-220-1"
+        },
+        {
+            "assetID": "hijak-zasuf-hotad-150",
+            "fields": {},
+            "inventoryNonce": 140,
+            "owner": "sprocket314",
+            "type": "1-C-393-1"
+        },
+        {
+            "assetID": "jukah-pamos-sihap-121",
+            "fields": {},
+            "inventoryNonce": 141,
+            "owner": "sprocket314",
+            "type": "1-C-353-1"
+        },
+        {
+            "assetID": "lugok-muvub-zotir-180",
+            "fields": {},
+            "inventoryNonce": 144,
+            "owner": "sprocket314",
+            "type": "1-C-249-1"
+        },
+        {
+            "assetID": "mufuv-pobit-pinut-038",
+            "fields": {},
+            "inventoryNonce": 144,
+            "owner": "sprocket314",
+            "type": "1-C-27-1"
+        },
+        {
+            "assetID": "nalad-rahog-dipip-171",
+            "fields": {},
+            "inventoryNonce": 144,
+            "owner": "sprocket314",
+            "type": "1-C-31-1"
+        },
+        {
+            "assetID": "poloh-mokul-gapit-079",
+            "fields": {},
+            "inventoryNonce": 144,
+            "owner": "sprocket314",
+            "type": "1-C-352-1"
+        },
+        {
+            "assetID": "rutor-dojig-jotaj-124",
+            "fields": {},
+            "inventoryNonce": 144,
+            "owner": "sprocket314",
+            "type": "1-C-96-1"
+        },
+        {
+            "assetID": "sasut-zufam-fovut-085",
+            "fields": {},
+            "inventoryNonce": 145,
+            "owner": "sprocket314",
+            "type": "1-C-379-1"
+        },
+        {
+            "assetID": "titum-famug-famus-004",
+            "fields": {},
+            "inventoryNonce": 145,
+            "owner": "sprocket314",
+            "type": "1-C-83-1"
+        },
+        {
+            "assetID": "bohiz-zirur-pugip-176",
+            "fields": {},
+            "inventoryNonce": 272,
+            "owner": "sprocket314",
+            "type": "1-C-82-1"
+        },
+        {
+            "assetID": "fudod-tunas-rovin-245",
+            "fields": {},
+            "inventoryNonce": 149,
+            "owner": "sprocket314",
+            "type": "1-C-141-1"
+        },
+        {
+            "assetID": "gohut-todug-haran-001",
+            "fields": {},
+            "inventoryNonce": 149,
+            "owner": "sprocket314",
+            "type": "1-C-157-1"
+        },
+        {
+            "assetID": "himiz-burah-kuhad-125",
+            "fields": {},
+            "inventoryNonce": 149,
+            "owner": "sprocket314",
+            "type": "1-C-343-1"
+        },
+        {
+            "assetID": "jurod-hofap-salad-208",
+            "fields": {},
+            "inventoryNonce": 149,
+            "owner": "sprocket314",
+            "type": "1-C-66-1"
+        },
+        {
+            "assetID": "kupab-fiviz-rasal-065",
+            "fields": {},
+            "inventoryNonce": 149,
+            "owner": "sprocket314",
+            "type": "1-C-94-1"
+        },
+        {
+            "assetID": "lupim-rugaz-kutom-215",
+            "fields": {},
+            "inventoryNonce": 150,
+            "owner": "sprocket314",
+            "type": "1-C-215-1"
+        },
+        {
+            "assetID": "mulus-vopah-tokiv-185",
+            "fields": {
+                "DCLOUT": {
+                    "type": "NUMERIC",
+                    "value": 3
+                },
+                "RARITY": {
+                    "type": "STRING",
+                    "value": "crafted"
+                },
+                "USED_SLOTS": {
+                    "type": "NUMERIC",
+                    "value": 1
+                },
+                "attack": {
+                    "type": "STRING",
+                    "value": "3"
+                },
+                "clout": {
+                    "type": "STRING",
+                    "value": "3<$icon_y:-20%><@D><$> 1<$icon_y:-20%><@O><$> "
+                },
+                "defense": {
+                    "type": "STRING",
+                    "value": "3"
+                },
+                "layout": {
+                    "type": "STRING",
+                    "value": "main, 1slot, mortal,D"
+                },
+                "rarity": {
+                    "type": "STRING",
+                    "value": "<$b #006600>CRAFTED<$>"
+                },
+                "rules": {
+                    "type": "STRING",
+                    "value": "<$b>DISTRACT<$> <$i 80%>(When this attacks, you may pick a mortal. If you do, that mortal cannot block this combat.)<$>\r\n<$c 60% icon_fit:none><@divider-large><$>\r\nIf this would be destroyed, put it onto the battlezone under its owner's control as a facedown statue instead."
+                },
+                "slot": {
+                    "type": "STRING",
+                    "value": "<@one-aug>"
+                },
+                "totalclout": {
+                    "type": "NUMERIC",
+                    "value": 4
+                }
+            },
+            "inventoryNonce": 296,
+            "owner": "sprocket314",
+            "type": "1-C-267-1"
+        },
+        {
+            "assetID": "nakar-bivad-nonod-160",
+            "fields": {
+                "ARTIST": {
+                    "type": "STRING",
+                    "value": "(Custom)"
+                },
+                "C_ART": {
+                    "type": "NUMERIC",
+                    "value": 1
+                },
+                "IMAGE": {
+                    "type": "STRING",
+                    "value": "https://i.imgur.com/AKInfDF.jpg"
+                }
+            },
+            "inventoryNonce": 464,
+            "owner": "sprocket314",
+            "type": "1-C-177-1"
+        },
+        {
+            "assetID": "hibas-burah-kuhad-179",
+            "fields": {},
+            "inventoryNonce": 402,
+            "owner": "sprocket314",
+            "type": "1-C-226-1"
+        },
+        {
+            "assetID": "sajuz-tuzob-momoz-141",
+            "fields": {},
+            "inventoryNonce": 154,
+            "owner": "sprocket314",
+            "type": "1-C-339-1"
+        },
+        {
+            "assetID": "tibof-bozaf-boguz-220",
+            "fields": {},
+            "inventoryNonce": 154,
+            "owner": "sprocket314",
+            "type": "1-C-339-1"
+        },
+        {
+            "assetID": "vasos-popov-simub-105",
+            "fields": {},
+            "inventoryNonce": 154,
+            "owner": "sprocket314",
+            "type": "1-C-342-1"
+        },
+        {
+            "assetID": "zusof-gokif-lomav-197",
+            "fields": {},
+            "inventoryNonce": 154,
+            "owner": "sprocket314",
+            "type": "1-C-65-1"
+        },
+        {
+            "assetID": "bohil-zirur-pugip-048",
+            "fields": {},
+            "inventoryNonce": 155,
+            "owner": "sprocket314",
+            "type": "1-C-119-1"
+        },
+        {
+            "assetID": "dokol-gigir-zohof-007",
+            "fields": {},
+            "inventoryNonce": 155,
+            "owner": "sprocket314",
+            "type": "1-C-29-1"
+        },
+        {
+            "assetID": "fakag-pugim-lituf-073",
+            "fields": {
+                "ARTIST": {
+                    "type": "STRING",
+                    "value": "(Custom)"
+                },
+                "C_ART": {
+                    "type": "NUMERIC",
+                    "value": 1
+                },
+                "IMAGE": {
+                    "type": "STRING",
+                    "value": "https://i.imgur.com/pWAGn8b.jpg"
+                }
+            },
+            "inventoryNonce": 460,
+            "owner": "sprocket314",
+            "type": "1-C-179-1"
+        },
+        {
+            "assetID": "horif-farud-vidos-240",
+            "fields": {},
+            "inventoryNonce": 159,
+            "owner": "sprocket314",
+            "type": "1-C-125-1"
+        },
+        {
+            "assetID": "vifud-sukij-jilog-039",
+            "fields": {},
+            "inventoryNonce": 516,
+            "owner": "sprocket314",
+            "type": "1-C-173-1"
+        },
+        {
+            "assetID": "sulat-zogaz-zidah-181",
+            "fields": {},
+            "inventoryNonce": 389,
+            "owner": "sprocket314",
+            "type": "1-C-275-1"
+        },
+        {
+            "assetID": "jolub-fizuj-kogob-239",
+            "fields": {},
+            "inventoryNonce": 383,
+            "owner": "sprocket314",
+            "type": "1-C-197-1"
+        },
+        {
+            "assetID": "mahim-pitos-rikuj-086",
+            "fields": {},
+            "inventoryNonce": 159,
+            "owner": "sprocket314",
+            "type": "1-C-64-1"
+        },
+        {
+            "assetID": "nudoj-malom-huhum-029",
+            "fields": {},
+            "inventoryNonce": 160,
+            "owner": "sprocket314",
+            "type": "1-C-21-1"
+        },
+        {
+            "assetID": "pidit-vukah-rogif-196",
+            "fields": {},
+            "inventoryNonce": 160,
+            "owner": "sprocket314",
+            "type": "1-C-95-1"
+        },
+        {
+            "assetID": "rarok-lubup-kofuk-214",
+            "fields": {},
+            "inventoryNonce": 161,
+            "owner": "sprocket314",
+            "type": "1-C-99-1"
+        },
+        {
+            "assetID": "togun-zihib-sudib-211",
+            "fields": {},
+            "inventoryNonce": 164,
+            "owner": "sprocket314",
+            "type": "1-C-141-1"
+        },
+        {
+            "assetID": "bonon-muluv-rovuh-039",
+            "fields": {},
+            "inventoryNonce": 439,
+            "owner": "sprocket314",
+            "type": "1-C-113-1"
+        },
+        {
+            "assetID": "zagis-linih-ranuh-055",
+            "fields": {},
+            "inventoryNonce": 164,
+            "owner": "sprocket314",
+            "type": "1-C-32-2"
+        },
+        {
+            "assetID": "busov-vukul-juloh-108",
+            "fields": {},
+            "inventoryNonce": 164,
+            "owner": "sprocket314",
+            "type": "1-C-39-1"
+        },
+        {
+            "assetID": "puhib-zodat-puhob-063",
+            "fields": {},
+            "inventoryNonce": 401,
+            "owner": "sprocket314",
+            "type": "1-C-239-1"
+        },
+        {
+            "assetID": "fipak-hulob-zopuj-002",
+            "fields": {},
+            "inventoryNonce": 165,
+            "owner": "sprocket314",
+            "type": "1-C-15-1"
+        },
+        {
+            "assetID": "gazoh-kutir-dugad-196",
+            "fields": {},
+            "inventoryNonce": 165,
+            "owner": "sprocket314",
+            "type": "1-C-165-1"
+        },
+        {
+            "assetID": "huluh-hakug-sufan-178",
+            "fields": {},
+            "inventoryNonce": 166,
+            "owner": "sprocket314",
+            "type": "1-C-353-1"
+        },
+        {
+            "assetID": "kidoh-vizuf-salob-128",
+            "fields": {},
+            "inventoryNonce": 169,
+            "owner": "sprocket314",
+            "type": "1-C-108-1"
+        },
+        {
+            "assetID": "linuv-gazot-tomod-214",
+            "fields": {},
+            "inventoryNonce": 169,
+            "owner": "sprocket314",
+            "type": "1-C-109-1"
+        },
+        {
+            "assetID": "mimob-jupin-lusor-161",
+            "fields": {},
+            "inventoryNonce": 169,
+            "owner": "sprocket314",
+            "type": "1-C-348-1"
+        },
+        {
+            "assetID": "noduf-hogih-pipih-099",
+            "fields": {},
+            "inventoryNonce": 169,
+            "owner": "sprocket314",
+            "type": "1-C-59-1"
+        },
+        {
+            "assetID": "jabih-nivaf-huboh-127",
+            "fields": {},
+            "inventoryNonce": 400,
+            "owner": "sprocket314",
+            "type": "1-C-152-1"
+        },
+        {
+            "assetID": "rigit-vodoj-tajot-101",
+            "fields": {},
+            "inventoryNonce": 170,
+            "owner": "sprocket314",
+            "type": "1-C-393-1"
+        },
+        {
+            "assetID": "sopul-zutuz-famom-204",
+            "fields": {},
+            "inventoryNonce": 170,
+            "owner": "sprocket314",
+            "type": "1-C-57-1"
+        },
+        {
+            "assetID": "gidus-totav-domin-218",
+            "fields": {},
+            "inventoryNonce": 278,
+            "owner": "sprocket314",
+            "type": "1-C-264-1"
+        },
+        {
+            "assetID": "zigom-zofum-kifun-044",
+            "fields": {},
+            "inventoryNonce": 174,
+            "owner": "sprocket314",
+            "type": "1-C-157-1"
+        },
+        {
+            "assetID": "bahut-luvup-vuhok-022",
+            "fields": {},
+            "inventoryNonce": 174,
+            "owner": "sprocket314",
+            "type": "1-C-27-1"
+        },
+        {
+            "assetID": "daput-huhuv-ranoh-235",
+            "fields": {},
+            "inventoryNonce": 174,
+            "owner": "sprocket314",
+            "type": "1-C-28-1"
+        },
+        {
+            "assetID": "fofis-mozad-vijur-132",
+            "fields": {},
+            "inventoryNonce": 174,
+            "owner": "sprocket314",
+            "type": "1-C-52-1"
+        },
+        {
+            "assetID": "gugoj-fuvor-tavim-052",
+            "fields": {},
+            "inventoryNonce": 174,
+            "owner": "sprocket314",
+            "type": "1-C-64-1"
+        },
+        {
+            "assetID": "fasit-havij-zohag-236",
+            "fields": {},
+            "inventoryNonce": 261,
+            "owner": "sprocket314",
+            "type": "1-C-96-1"
+        },
+        {
+            "assetID": "johib-jonum-bigaf-243",
+            "fields": {},
+            "inventoryNonce": 175,
+            "owner": "sprocket314",
+            "type": "1-C-91-1"
+        },
+        {
+            "assetID": "kodan-suvuj-mivad-068",
+            "fields": {},
+            "inventoryNonce": 176,
+            "owner": "sprocket314",
+            "type": "1-C-260-1"
+        },
+        {
+            "assetID": "sajuj-suzob-momoz-046",
+            "fields": {},
+            "inventoryNonce": 183,
+            "owner": "sprocket314",
+            "type": "1-C-35-1"
+        },
+        {
+            "assetID": "himas-burah-kuhad-177",
+            "fields": {},
+            "inventoryNonce": 180,
+            "owner": "sprocket314",
+            "type": "1-C-13-1"
+        },
+        {
+            "assetID": "jurod-hokup-salad-195",
+            "fields": {},
+            "inventoryNonce": 180,
+            "owner": "sprocket314",
+            "type": "1-C-157-1"
+        },
+        {
+            "assetID": "kupab-fatiz-rasal-145",
+            "fields": {},
+            "inventoryNonce": 180,
+            "owner": "sprocket314",
+            "type": "1-C-275-1"
+        },
+        {
+            "assetID": "lupim-robaz-kutom-167",
+            "fields": {},
+            "inventoryNonce": 180,
+            "owner": "sprocket314",
+            "type": "1-C-39-1"
+        },
+        {
+            "assetID": "mulus-vovuh-tokiv-172",
+            "fields": {},
+            "inventoryNonce": 180,
+            "owner": "sprocket314",
+            "type": "1-C-74-1"
+        },
+        {
+            "assetID": "nakar-pavad-nonod-166",
+            "fields": {},
+            "inventoryNonce": 181,
+            "owner": "sprocket314",
+            "type": "1-C-140-1"
+        },
+        {
+            "assetID": "pofim-fuvig-mojun-228",
+            "fields": {},
+            "inventoryNonce": 181,
+            "owner": "sprocket314",
+            "type": "1-C-165-1"
+        },
+        {
+            "assetID": "vasov-popov-simub-073",
+            "fields": {},
+            "inventoryNonce": 271,
+            "owner": "sprocket314",
+            "type": "1-C-74-1"
+        },
+        {
+            "assetID": "dosik-huvuf-nohol-243",
+            "fields": {},
+            "inventoryNonce": 261,
+            "owner": "sprocket314",
+            "type": "1-C-352-1"
+        },
+        {
+            "assetID": "giduv-sotav-domin-187",
+            "fields": {},
+            "inventoryNonce": 194,
+            "owner": "sprocket314",
+            "type": "1-C-72-1"
+        },
+        {
+            "assetID": "fuzin-mipal-fazop-000",
+            "fields": {},
+            "inventoryNonce": 186,
+            "owner": "sprocket314",
+            "type": "1-C-249-1"
+        },
+        {
+            "assetID": "gopan-dokuk-subis-189",
+            "fields": {},
+            "inventoryNonce": 186,
+            "owner": "sprocket314",
+            "type": "1-C-266-1"
+        },
+        {
+            "assetID": "hikad-magaz-fanig-043",
+            "fields": {},
+            "inventoryNonce": 186,
+            "owner": "sprocket314",
+            "type": "1-C-342-1"
+        },
+        {
+            "assetID": "mulus-vokuj-tokiv-158",
+            "fields": {
+                "ARTIST": {
+                    "type": "STRING",
+                    "value": "(Custom)"
+                },
+                "C_ART": {
+                    "type": "NUMERIC",
+                    "value": 1
+                },
+                "IMAGE": {
+                    "type": "STRING",
+                    "value": "https://i.imgur.com/D284SIr.jpg"
+                }
+            },
+            "inventoryNonce": 475,
+            "owner": "sprocket314",
+            "type": "1-C-176-1"
+        },
+        {
+            "assetID": "kumok-luzob-gunab-233",
+            "fields": {},
+            "inventoryNonce": 186,
+            "owner": "sprocket314",
+            "type": "1-C-93-1"
+        },
+        {
+            "assetID": "lusab-buril-rapim-079",
+            "fields": {},
+            "inventoryNonce": 187,
+            "owner": "sprocket314",
+            "type": "1-C-221-1"
+        },
+        {
+            "assetID": "munuf-tajup-jolus-174",
+            "fields": {},
+            "inventoryNonce": 187,
+            "owner": "sprocket314",
+            "type": "1-C-396-1"
+        },
+        {
+            "assetID": "nasum-gihok-pihar-033",
+            "fields": {},
+            "inventoryNonce": 188,
+            "owner": "sprocket314",
+            "type": "1-C-247-1"
+        },
+        {
+            "assetID": "rukir-gorij-ginig-206",
+            "fields": {},
+            "inventoryNonce": 191,
+            "owner": "sprocket314",
+            "type": "1-C-13-1"
+        },
+        {
+            "assetID": "zaful-ridir-hogih-190",
+            "fields": {},
+            "inventoryNonce": 390,
+            "owner": "sprocket314",
+            "type": "1-C-271-1"
+        },
+        {
+            "assetID": "tifuz-kibav-gobav-110",
+            "fields": {},
+            "inventoryNonce": 191,
+            "owner": "sprocket314",
+            "type": "1-C-39-1"
+        },
+        {
+            "assetID": "vapub-hirop-pogud-224",
+            "fields": {},
+            "inventoryNonce": 191,
+            "owner": "sprocket314",
+            "type": "1-C-64-1"
+        },
+        {
+            "assetID": "zupav-gizap-josif-157",
+            "fields": {},
+            "inventoryNonce": 191,
+            "owner": "sprocket314",
+            "type": "1-C-93-1"
+        },
+        {
+            "assetID": "bofip-jusut-vupoz-240",
+            "fields": {},
+            "inventoryNonce": 192,
+            "owner": "sprocket314",
+            "type": "1-C-119-1"
+        },
+        {
+            "assetID": "dosan-huvuf-nohol-199",
+            "fields": {},
+            "inventoryNonce": 192,
+            "owner": "sprocket314",
+            "type": "1-C-231-1"
+        },
+        {
+            "assetID": "zaful-lodir-hogih-178",
+            "fields": {},
+            "inventoryNonce": 278,
+            "owner": "sprocket314",
+            "type": "1-C-55-1"
+        },
+        {
+            "assetID": "norih-sobav-hanon-231",
+            "fields": {},
+            "inventoryNonce": 200,
+            "owner": "sprocket314",
+            "type": "1-C-137-1"
+        },
+        {
+            "assetID": "fobot-gimuj-tufis-020",
+            "fields": {},
+            "inventoryNonce": 338,
+            "owner": "sprocket314",
+            "type": "1-C-11-1"
+        },
+        {
+            "assetID": "rojut-hupon-fukop-015",
+            "fields": {},
+            "inventoryNonce": 210,
+            "owner": "sprocket314",
+            "type": "1-C-353-1"
+        },
+        {
+            "assetID": "dumif-notuj-finaz-157",
+            "fields": {},
+            "inventoryNonce": 197,
+            "owner": "sprocket314",
+            "type": "1-C-13-1"
+        },
+        {
+            "assetID": "fibit-nasup-vinak-162",
+            "fields": {},
+            "inventoryNonce": 197,
+            "owner": "sprocket314",
+            "type": "1-C-142-1"
+        },
+        {
+            "assetID": "ganil-kukaz-bisoh-069",
+            "fields": {},
+            "inventoryNonce": 197,
+            "owner": "sprocket314",
+            "type": "1-C-275-1"
+        },
+        {
+            "assetID": "hudim-jubur-bikuh-058",
+            "fields": {},
+            "inventoryNonce": 197,
+            "owner": "sprocket314",
+            "type": "1-C-354-2"
+        },
+        {
+            "assetID": "jifan-fopag-ladok-088",
+            "fields": {},
+            "inventoryNonce": 197,
+            "owner": "sprocket314",
+            "type": "1-C-65-1"
+        },
+        {
+            "assetID": "kilob-madut-zobus-002",
+            "fields": {},
+            "inventoryNonce": 198,
+            "owner": "sprocket314",
+            "type": "1-C-114-1"
+        },
+        {
+            "assetID": "lirod-volas-riluf-088",
+            "fields": {},
+            "inventoryNonce": 198,
+            "owner": "sprocket314",
+            "type": "1-C-278-1"
+        },
+        {
+            "assetID": "mivor-pohir-kivig-001",
+            "fields": {},
+            "inventoryNonce": 199,
+            "owner": "sprocket314",
+            "type": "1-C-222-1"
+        },
+        {
+            "assetID": "parad-ponut-bokil-199",
+            "fields": {},
+            "inventoryNonce": 202,
+            "owner": "sprocket314",
+            "type": "1-C-142-1"
+        },
+        {
+            "assetID": "rinuk-pijuh-nigit-227",
+            "fields": {},
+            "inventoryNonce": 202,
+            "owner": "sprocket314",
+            "type": "1-C-158-1"
+        },
+        {
+            "assetID": "tokoz-nofas-ladas-234",
+            "fields": {},
+            "inventoryNonce": 389,
+            "owner": "sprocket314",
+            "type": "1-C-341-1"
+        },
+        {
+            "assetID": "filif-kafon-burov-017",
+            "fields": {},
+            "inventoryNonce": 392,
+            "owner": "sprocket314",
+            "type": "1-C-401-2"
+        },
+        {
+            "assetID": "budir-duzot-litun-026",
+            "fields": {},
+            "inventoryNonce": 390,
+            "owner": "sprocket314",
+            "type": "1-C-57-1"
+        },
+        {
+            "assetID": "valav-bobup-popus-013",
+            "fields": {},
+            "inventoryNonce": 212,
+            "owner": "sprocket314",
+            "type": "1-C-231-1"
+        },
+        {
+            "assetID": "bakok-tazir-zopug-166",
+            "fields": {},
+            "inventoryNonce": 203,
+            "owner": "sprocket314",
+            "type": "1-C-272-1"
+        },
+        {
+            "assetID": "zusof-fokif-lomav-198",
+            "fields": {},
+            "inventoryNonce": 272,
+            "owner": "sprocket314",
+            "type": "1-C-396-1"
+        },
+        {
+            "assetID": "gunar-gukum-lafoj-188",
+            "fields": {},
+            "inventoryNonce": 207,
+            "owner": "sprocket314",
+            "type": "1-C-108-2"
+        },
+        {
+            "assetID": "rimoz-jigin-tajuv-072",
+            "fields": {},
+            "inventoryNonce": 378,
+            "owner": "sprocket314",
+            "type": "1-C-220-1"
+        },
+        {
+            "assetID": "jofaf-jajik-vafat-051",
+            "fields": {},
+            "inventoryNonce": 207,
+            "owner": "sprocket314",
+            "type": "1-C-340-1"
+        },
+        {
+            "assetID": "kozad-bifor-zidon-200",
+            "fields": {},
+            "inventoryNonce": 207,
+            "owner": "sprocket314",
+            "type": "1-C-384-1"
+        },
+        {
+            "assetID": "logig-sizam-luvoj-116",
+            "fields": {},
+            "inventoryNonce": 207,
+            "owner": "sprocket314",
+            "type": "1-C-7-1"
+        },
+        {
+            "assetID": "mopil-jinok-tosuk-135",
+            "fields": {
+                "GCLOUT": {
+                    "type": "NUMERIC",
+                    "value": 3
+                },
+                "OCLOUT": {
+                    "type": "NUMERIC",
+                    "value": 2
+                },
+                "RARITY": {
+                    "type": "STRING",
+                    "value": "crafted"
+                },
+                "USED_SLOTS": {
+                    "type": "NUMERIC",
+                    "value": 1
+                },
+                "clout": {
+                    "type": "STRING",
+                    "value": "3<$icon_y:-20%><@G><$> 2<$icon_y:-20%><@O><$> "
+                },
+                "defense": {
+                    "type": "STRING",
+                    "value": "4"
+                },
+                "layout": {
+                    "type": "STRING",
+                    "value": "main, 1slot, mortal,G"
+                },
+                "rarity": {
+                    "type": "STRING",
+                    "value": "<$b #006600>CRAFTED<$>"
+                },
+                "rules": {
+                    "type": "STRING",
+                    "value": "Attack - At the end of combat, undeplete this.\r\n<$c 60% icon_fit:none><@divider-large><$>\r\nHit - You may search your deck for a standard statue and put it onto the battlezone."
+                },
+                "slot": {
+                    "type": "STRING",
+                    "value": "<@one-aug>"
+                },
+                "totalclout": {
+                    "type": "NUMERIC",
+                    "value": 5
+                }
+            },
+            "inventoryNonce": 232,
+            "owner": "sprocket314",
+            "type": "1-C-271-1"
+        },
+        {
+            "assetID": "kozad-bimur-zidon-066",
+            "fields": {},
+            "inventoryNonce": 338,
+            "owner": "sprocket314",
+            "type": "1-C-101-1"
+        },
+        {
+            "assetID": "puzan-bitaz-kahup-125",
+            "fields": {},
+            "inventoryNonce": 209,
+            "owner": "sprocket314",
+            "type": "1-C-181-1"
+        },
+        {
+            "assetID": "hobor-dolim-sonaf-048",
+            "fields": {},
+            "inventoryNonce": 237,
+            "owner": "sprocket314",
+            "type": "1-C-68-1"
+        },
+        {
+            "assetID": "poloh-mosul-gapit-205",
+            "fields": {},
+            "inventoryNonce": 317,
+            "owner": "sprocket314",
+            "type": "1-C-80-1"
+        },
+        {
+            "assetID": "samos-zufam-fovut-106",
+            "fields": {},
+            "inventoryNonce": 234,
+            "owner": "sprocket314",
+            "type": "1-C-31-1"
+        },
+        {
+            "assetID": "tusaj-davum-bavaz-237",
+            "fields": {},
+            "inventoryNonce": 379,
+            "owner": "sprocket314",
+            "type": "1-C-216-1"
+        },
+        {
+            "assetID": "vadav-topop-valav-204",
+            "fields": {},
+            "inventoryNonce": 234,
+            "owner": "sprocket314",
+            "type": "1-C-354-2"
+        },
+        {
+            "assetID": "zunug-mumoj-funaf-029",
+            "fields": {},
+            "inventoryNonce": 234,
+            "owner": "sprocket314",
+            "type": "1-C-375-1"
+        },
+        {
+            "assetID": "bozuh-pimaz-tozop-045",
+            "fields": {},
+            "inventoryNonce": 234,
+            "owner": "sprocket314",
+            "type": "1-C-93-1"
+        },
+        {
+            "assetID": "dotil-matoz-fipan-193",
+            "fields": {},
+            "inventoryNonce": 235,
+            "owner": "sprocket314",
+            "type": "1-C-272-1"
+        },
+        {
+            "assetID": "pabos-tamoj-lohap-255",
+            "fields": {},
+            "inventoryNonce": 396,
+            "owner": "sprocket314",
+            "type": "1-C-253-1"
+        },
+        {
+            "assetID": "dokol-lifir-zohof-067",
+            "fields": {},
+            "inventoryNonce": 257,
+            "owner": "sprocket314",
+            "type": "1-C-354-2"
+        },
+        {
+            "assetID": "sulat-zodaz-zidah-053",
+            "fields": {},
+            "inventoryNonce": 466,
+            "owner": "sprocket314",
+            "type": "1-C-16-1"
+        },
+        {
+            "assetID": "sotil-muzuf-bofov-110",
+            "fields": {},
+            "inventoryNonce": 378,
+            "owner": "sprocket314",
+            "type": "1-C-95-1"
+        },
+        {
+            "assetID": "likav-fadur-tirap-011",
+            "fields": {},
+            "inventoryNonce": 377,
+            "owner": "sprocket314",
+            "type": "1-C-28-1"
+        },
+        {
+            "assetID": "malot-jahop-jufur-064",
+            "fields": {},
+            "inventoryNonce": 239,
+            "owner": "sprocket314",
+            "type": "1-C-80-1"
+        },
+        {
+            "assetID": "nufom-tobun-matat-219",
+            "fields": {},
+            "inventoryNonce": 239,
+            "owner": "sprocket314",
+            "type": "1-C-94-1"
+        },
+        {
+            "assetID": "pipah-lazod-hupuh-064",
+            "fields": {},
+            "inventoryNonce": 240,
+            "owner": "sprocket314",
+            "type": "1-C-113-1"
+        },
+        {
+            "assetID": "ramit-ponos-kopil-207",
+            "fields": {},
+            "inventoryNonce": 240,
+            "owner": "sprocket314",
+            "type": "1-C-92-1"
+        },
+        {
+            "assetID": "sutuk-jozuj-bajat-192",
+            "fields": {},
+            "inventoryNonce": 241,
+            "owner": "sprocket314",
+            "type": "1-C-61-1"
+        },
+        {
+            "assetID": "vubaz-kijij-logal-208",
+            "fields": {},
+            "inventoryNonce": 244,
+            "owner": "sprocket314",
+            "type": "1-C-105-1"
+        },
+        {
+            "assetID": "zabal-hufiv-hadul-041",
+            "fields": {},
+            "inventoryNonce": 244,
+            "owner": "sprocket314",
+            "type": "1-C-27-1"
+        },
+        {
+            "assetID": "nakar-davad-nonod-175",
+            "fields": {},
+            "inventoryNonce": 257,
+            "owner": "sprocket314",
+            "type": "1-C-341-1"
+        },
+        {
+            "assetID": "zusap-gokif-lomav-077",
+            "fields": {},
+            "inventoryNonce": 257,
+            "owner": "sprocket314",
+            "type": "1-C-118-1"
+        },
+        {
+            "assetID": "farad-gosuh-mujiz-077",
+            "fields": {},
+            "inventoryNonce": 259,
+            "owner": "sprocket314",
+            "type": "1-C-241-1"
+        },
+        {
+            "assetID": "fakag-pigim-lituf-105",
+            "fields": {},
+            "inventoryNonce": 274,
+            "owner": "sprocket314",
+            "type": "1-C-72-1"
+        },
+        {
+            "assetID": "kagib-huluv-limiv-088",
+            "fields": {},
+            "inventoryNonce": 264,
+            "owner": "sprocket314",
+            "type": "1-C-36-1"
+        },
+        {
+            "assetID": "vapub-lorop-pogud-205",
+            "fields": {},
+            "inventoryNonce": 261,
+            "owner": "sprocket314",
+            "type": "1-C-123-1"
+        },
+        {
+            "assetID": "zupav-ranap-josif-038",
+            "fields": {},
+            "inventoryNonce": 261,
+            "owner": "sprocket314",
+            "type": "1-C-125-1"
+        },
+        {
+            "assetID": "kuzif-bobil-zufag-096",
+            "fields": {},
+            "inventoryNonce": 401,
+            "owner": "sprocket314",
+            "type": "1-C-238-1-O"
+        },
+        {
+            "assetID": "pofim-pitig-mojun-060",
+            "fields": {},
+            "inventoryNonce": 271,
+            "owner": "sprocket314",
+            "type": "1-C-105-1"
+        },
+        {
+            "assetID": "rusod-litaj-kuhir-021",
+            "fields": {},
+            "inventoryNonce": 271,
+            "owner": "sprocket314",
+            "type": "1-C-342-1"
+        },
+        {
+            "assetID": "zuraf-vuhuf-pinal-168",
+            "fields": {},
+            "inventoryNonce": 434,
+            "owner": "sprocket314",
+            "type": "1-C-215-1"
+        },
+        {
+            "assetID": "gafik-natod-zahar-245",
+            "fields": {},
+            "inventoryNonce": 394,
+            "owner": "sprocket314",
+            "type": "1-C-13-1"
+        },
+        {
+            "assetID": "jurod-hovop-salad-197",
+            "fields": {},
+            "inventoryNonce": 277,
+            "owner": "sprocket314",
+            "type": "1-C-378-1"
+        },
+        {
+            "assetID": "gunar-tukum-lafoj-178",
+            "fields": {},
+            "inventoryNonce": 338,
+            "owner": "sprocket314",
+            "type": "1-C-211-1"
+        },
+        {
+            "assetID": "ditoz-lokul-najos-126",
+            "fields": {},
+            "inventoryNonce": 316,
+            "owner": "sprocket314",
+            "type": "1-C-37-1"
+        },
+        {
+            "assetID": "bohoj-zirur-pugip-076",
+            "fields": {},
+            "inventoryNonce": 316,
+            "owner": "sprocket314",
+            "type": "1-C-117-1"
+        },
+        {
+            "assetID": "kaboz-vujak-vadah-149",
+            "fields": {},
+            "inventoryNonce": 316,
+            "owner": "sprocket314",
+            "type": "1-C-244-1"
+        },
+        {
+            "assetID": "tifuz-vudav-gobav-006",
+            "fields": {},
+            "inventoryNonce": 316,
+            "owner": "sprocket314",
+            "type": "1-C-60-1"
+        },
+        {
+            "assetID": "bozuh-piliz-tozop-106",
+            "fields": {},
+            "inventoryNonce": 316,
+            "owner": "sprocket314",
+            "type": "1-C-88-1"
+        },
+        {
+            "assetID": "gamal-risub-dufik-076",
+            "fields": {},
+            "inventoryNonce": 319,
+            "owner": "sprocket314",
+            "type": "1-C-275-1"
+        },
+        {
+            "assetID": "jolub-fihaj-kogob-189",
+            "fields": {},
+            "inventoryNonce": 319,
+            "owner": "sprocket314",
+            "type": "1-C-275-1"
+        },
+        {
+            "assetID": "zuraf-vukag-pinal-036",
+            "fields": {},
+            "inventoryNonce": 319,
+            "owner": "sprocket314",
+            "type": "1-C-273-1"
+        },
+        {
+            "assetID": "pudat-murib-tovan-120",
+            "fields": {},
+            "inventoryNonce": 319,
+            "owner": "sprocket314",
+            "type": "1-C-273-1"
+        },
+        {
+            "assetID": "judip-gofus-dimod-077",
+            "fields": {},
+            "inventoryNonce": 319,
+            "owner": "sprocket314",
+            "type": "1-C-274-1"
+        },
+        {
+            "assetID": "gunag-mukum-lafoj-055",
+            "fields": {},
+            "inventoryNonce": 319,
+            "owner": "sprocket314",
+            "type": "1-C-274-1"
+        },
+        {
+            "assetID": "ribum-jigin-tajuv-182",
+            "fields": {},
+            "inventoryNonce": 319,
+            "owner": "sprocket314",
+            "type": "1-C-277-1"
+        },
+        {
+            "assetID": "dumin-notuj-finaz-045",
+            "fields": {},
+            "inventoryNonce": 319,
+            "owner": "sprocket314",
+            "type": "1-C-277-1"
+        },
+        {
+            "assetID": "pomas-lubok-tifim-084",
+            "fields": {},
+            "inventoryNonce": 319,
+            "owner": "sprocket314",
+            "type": "1-C-278-1"
+        },
+        {
+            "assetID": "jifan-sapag-ladok-110",
+            "fields": {},
+            "inventoryNonce": 319,
+            "owner": "sprocket314",
+            "type": "1-C-278-1"
+        },
+        {
+            "assetID": "finim-mifaz-polif-145",
+            "fields": {},
+            "inventoryNonce": 373,
+            "owner": "sprocket314",
+            "type": "1-C-144-1"
+        },
+        {
+            "assetID": "limah-sukut-fokav-139",
+            "fields": {},
+            "inventoryNonce": 394,
+            "owner": "sprocket314",
+            "type": "1-C-375-1"
+        },
+        {
+            "assetID": "tibuk-bozaf-boguz-152",
+            "fields": {},
+            "inventoryNonce": 325,
+            "owner": "sprocket314",
+            "type": "1-C-43-1"
+        },
+        {
+            "assetID": "mitok-litok-nutar-079",
+            "fields": {},
+            "inventoryNonce": 395,
+            "owner": "sprocket314",
+            "type": "1-C-114-1"
+        },
+        {
+            "assetID": "jurod-hokar-salad-191",
+            "fields": {},
+            "inventoryNonce": 322,
+            "owner": "sprocket314",
+            "type": "1-C-142-1"
+        },
+        {
+            "assetID": "tokoz-tofas-ladas-230",
+            "fields": {},
+            "inventoryNonce": 477,
+            "owner": "sprocket314",
+            "type": "1-C-395-1"
+        },
+        {
+            "assetID": "lupim-rolaz-kutom-230",
+            "fields": {},
+            "inventoryNonce": 322,
+            "owner": "sprocket314",
+            "type": "1-C-31-1"
+        },
+        {
+            "assetID": "gahoh-risub-dufik-117",
+            "fields": {},
+            "inventoryNonce": 373,
+            "owner": "sprocket314",
+            "type": "1-C-175-2"
+        },
+        {
+            "assetID": "nakar-fuvad-nonod-126",
+            "fields": {},
+            "inventoryNonce": 322,
+            "owner": "sprocket314",
+            "type": "1-C-96-1"
+        },
+        {
+            "assetID": "pofim-fitig-mojun-068",
+            "fields": {},
+            "inventoryNonce": 323,
+            "owner": "sprocket314",
+            "type": "1-C-113-1"
+        },
+        {
+            "assetID": "rusob-litaj-kuhir-037",
+            "fields": {},
+            "inventoryNonce": 323,
+            "owner": "sprocket314",
+            "type": "1-C-229-1"
+        },
+        {
+            "assetID": "sajut-zuzob-momoz-171",
+            "fields": {},
+            "inventoryNonce": 324,
+            "owner": "sprocket314",
+            "type": "1-C-133-1"
+        },
+        {
+            "assetID": "sogov-luruz-zobap-104",
+            "fields": {},
+            "inventoryNonce": 331,
+            "owner": "sprocket314",
+            "type": "1-C-389-1"
+        },
+        {
+            "assetID": "jonaj-niniv-mahub-245",
+            "fields": {},
+            "inventoryNonce": 336,
+            "owner": "sprocket314",
+            "type": "1-C-42-1"
+        },
+        {
+            "assetID": "hufih-muras-rahot-106",
+            "fields": {},
+            "inventoryNonce": 328,
+            "owner": "sprocket314",
+            "type": "1-C-274-1"
+        },
+        {
+            "assetID": "hubof-fazob-nigih-186",
+            "fields": {},
+            "inventoryNonce": 374,
+            "owner": "sprocket314",
+            "type": "1-C-222-1"
+        },
+        {
+            "assetID": "kibup-turas-sifam-099",
+            "fields": {},
+            "inventoryNonce": 328,
+            "owner": "sprocket314",
+            "type": "1-C-65-1"
+        },
+        {
+            "assetID": "dulif-zojim-kulif-219",
+            "fields": {},
+            "inventoryNonce": 391,
+            "owner": "sprocket314",
+            "type": "1-C-260-1"
+        },
+        {
+            "assetID": "mitof-hitok-nutar-146",
+            "fields": {},
+            "inventoryNonce": 328,
+            "owner": "sprocket314",
+            "type": "1-C-96-1"
+        },
+        {
+            "assetID": "nomat-vadip-nodis-230",
+            "fields": {
+                "OCLOUT": {
+                    "type": "NUMERIC",
+                    "value": 2
+                },
+                "RARITY": {
+                    "type": "STRING",
+                    "value": "crafted"
+                },
+                "TCLOUT": {
+                    "type": "NUMERIC",
+                    "value": 3
+                },
+                "USED_SLOTS": {
+                    "type": "NUMERIC",
+                    "value": 1
+                },
+                "attack": {
+                    "type": "STRING",
+                    "value": "3"
+                },
+                "clout": {
+                    "type": "STRING",
+                    "value": "3<$icon_y:-20%><@T><$> 2<$icon_y:-20%><@O><$> "
+                },
+                "defense": {
+                    "type": "STRING",
+                    "value": "2"
+                },
+                "layout": {
+                    "type": "STRING",
+                    "value": "main, 1slot, mortal,T"
+                },
+                "rarity": {
+                    "type": "STRING",
+                    "value": "<$b #006600>CRAFTED<$>"
+                },
+                "rules": {
+                    "type": "STRING",
+                    "value": "Destroyed - Each opponent discards a card.\r\n<$c 60% icon_fit:none><@divider-large><$>\r\nHit - Each opponent discards a card."
+                },
+                "slot": {
+                    "type": "STRING",
+                    "value": "<@one-aug>"
+                },
+                "totalclout": {
+                    "type": "NUMERIC",
+                    "value": 5
+                }
+            },
+            "inventoryNonce": 508,
+            "owner": "sprocket314",
+            "type": "1-C-270-1"
+        },
+        {
+            "assetID": "pamat-tamoj-lohap-245",
+            "fields": {},
+            "inventoryNonce": 329,
+            "owner": "sprocket314",
+            "type": "1-C-92-1"
+        },
+        {
+            "assetID": "hafob-budol-doson-208",
+            "fields": {},
+            "inventoryNonce": 338,
+            "owner": "sprocket314",
+            "type": "1-C-230-1"
+        },
+        {
+            "assetID": "tuvaz-gakam-zafam-061",
+            "fields": {},
+            "inventoryNonce": 333,
+            "owner": "sprocket314",
+            "type": "1-C-109-1"
+        },
+        {
+            "assetID": "vofog-suvop-poval-150",
+            "fields": {},
+            "inventoryNonce": 333,
+            "owner": "sprocket314",
+            "type": "1-C-145-1"
+        },
+        {
+            "assetID": "zifoz-fafok-nalom-045",
+            "fields": {},
+            "inventoryNonce": 333,
+            "owner": "sprocket314",
+            "type": "1-C-39-1"
+        },
+        {
+            "assetID": "banin-zutoz-pozan-051",
+            "fields": {},
+            "inventoryNonce": 333,
+            "owner": "sprocket314",
+            "type": "1-C-66-1"
+        },
+        {
+            "assetID": "dagiv-tahat-vufip-027",
+            "fields": {},
+            "inventoryNonce": 333,
+            "owner": "sprocket314",
+            "type": "1-C-7-1"
+        },
+        {
+            "assetID": "fozoh-savig-dolit-090",
+            "fields": {},
+            "inventoryNonce": 334,
+            "owner": "sprocket314",
+            "type": "1-C-393-1"
+        },
+        {
+            "assetID": "gukif-ripot-mudom-179",
+            "fields": {},
+            "inventoryNonce": 334,
+            "owner": "sprocket314",
+            "type": "1-C-57-1"
+        },
+        {
+            "assetID": "hopaf-sihav-jafuk-076",
+            "fields": {},
+            "inventoryNonce": 341,
+            "owner": "sprocket314",
+            "type": "1-C-51-1"
+        },
+        {
+            "assetID": "honah-dimuj-marif-253",
+            "fields": {},
+            "inventoryNonce": 344,
+            "owner": "sprocket314",
+            "type": "1-C-384-1-O"
+        },
+        {
+            "assetID": "totun-pabul-habun-206",
+            "fields": {},
+            "inventoryNonce": 350,
+            "owner": "sprocket314",
+            "type": "1-C-278-1-O"
+        },
+        {
+            "assetID": "kilob-makot-zobus-197",
+            "fields": {},
+            "inventoryNonce": 355,
+            "owner": "sprocket314",
+            "type": "1-C-388-1"
+        },
+        {
+            "assetID": "mopil-torok-tosuk-239",
+            "fields": {},
+            "inventoryNonce": 365,
+            "owner": "sprocket314",
+            "type": "1-C-37-1"
+        },
+        {
+            "assetID": "zituk-rapin-sifom-237",
+            "fields": {},
+            "inventoryNonce": 360,
+            "owner": "sprocket314",
+            "type": "1-C-271-1-O"
+        },
+        {
+            "assetID": "lovas-jafol-rukih-153",
+            "fields": {},
+            "inventoryNonce": 385,
+            "owner": "sprocket314",
+            "type": "1-C-71-1"
+        },
+        {
+            "assetID": "vobit-ropop-gudog-254",
+            "fields": {},
+            "inventoryNonce": 380,
+            "owner": "sprocket314",
+            "type": "1-C-392-1"
+        },
+        {
+            "assetID": "dihid-pizin-hifur-025",
+            "fields": {},
+            "inventoryNonce": 370,
+            "owner": "sprocket314",
+            "type": "1-C-390-1"
+        },
+        {
+            "assetID": "jirib-nozuf-gudim-022",
+            "fields": {},
+            "inventoryNonce": 375,
+            "owner": "sprocket314",
+            "type": "1-C-168-1"
+        },
+        {
+            "assetID": "jafoh-zujon-gobig-196",
+            "fields": {},
+            "inventoryNonce": 347,
+            "owner": "sprocket314",
+            "type": "1-C-125-1"
+        },
+        {
+            "assetID": "kagib-haguv-limiv-137",
+            "fields": {},
+            "inventoryNonce": 347,
+            "owner": "sprocket314",
+            "type": "1-C-159-1"
+        },
+        {
+            "assetID": "pihan-ribir-vanah-246",
+            "fields": {},
+            "inventoryNonce": 389,
+            "owner": "sprocket314",
+            "type": "1-C-12-1"
+        },
+        {
+            "assetID": "makuj-rupoj-razon-160",
+            "fields": {},
+            "inventoryNonce": 347,
+            "owner": "sprocket314",
+            "type": "1-C-375-1"
+        },
+        {
+            "assetID": "nulum-mitit-nafig-142",
+            "fields": {},
+            "inventoryNonce": 347,
+            "owner": "sprocket314",
+            "type": "1-C-53-1"
+        },
+        {
+            "assetID": "pigif-hihor-datov-009",
+            "fields": {},
+            "inventoryNonce": 348,
+            "owner": "sprocket314",
+            "type": "1-C-162-1"
+        },
+        {
+            "assetID": "ratit-zopip-sonok-179",
+            "fields": {},
+            "inventoryNonce": 348,
+            "owner": "sprocket314",
+            "type": "1-C-55-1"
+        },
+        {
+            "assetID": "sumub-zulib-hihuz-161",
+            "fields": {},
+            "inventoryNonce": 349,
+            "owner": "sprocket314",
+            "type": "1-C-245-1"
+        },
+        {
+            "assetID": "vutim-pujij-junub-169",
+            "fields": {},
+            "inventoryNonce": 352,
+            "owner": "sprocket314",
+            "type": "1-C-10-1"
+        },
+        {
+            "assetID": "zatir-jatoh-vadis-088",
+            "fields": {},
+            "inventoryNonce": 352,
+            "owner": "sprocket314",
+            "type": "1-C-125-1"
+        },
+        {
+            "assetID": "mizar-rotij-rojol-207",
+            "fields": {},
+            "inventoryNonce": 377,
+            "owner": "sprocket314",
+            "type": "1-C-39-1"
+        },
+        {
+            "assetID": "dumij-motuj-finaz-110",
+            "fields": {},
+            "inventoryNonce": 352,
+            "owner": "sprocket314",
+            "type": "1-C-49-1"
+        },
+        {
+            "assetID": "fibom-nasup-vinak-238",
+            "fields": {},
+            "inventoryNonce": 352,
+            "owner": "sprocket314",
+            "type": "1-C-70-2"
+        },
+        {
+            "assetID": "ganin-hukaz-bisoh-039",
+            "fields": {},
+            "inventoryNonce": 353,
+            "owner": "sprocket314",
+            "type": "1-C-144-1"
+        },
+        {
+            "assetID": "hudim-fobur-bikuh-077",
+            "fields": {},
+            "inventoryNonce": 353,
+            "owner": "sprocket314",
+            "type": "1-C-165-1"
+        },
+        {
+            "assetID": "jifan-vurag-ladok-252",
+            "fields": {},
+            "inventoryNonce": 354,
+            "owner": "sprocket314",
+            "type": "1-C-239-1"
+        },
+        {
+            "assetID": "lirod-vobis-riluf-021",
+            "fields": {},
+            "inventoryNonce": 357,
+            "owner": "sprocket314",
+            "type": "1-C-108-2"
+        },
+        {
+            "assetID": "mivor-kujir-kivig-181",
+            "fields": {},
+            "inventoryNonce": 357,
+            "owner": "sprocket314",
+            "type": "1-C-266-1"
+        },
+        {
+            "assetID": "norih-sovov-hanon-092",
+            "fields": {},
+            "inventoryNonce": 357,
+            "owner": "sprocket314",
+            "type": "1-C-273-1"
+        },
+        {
+            "assetID": "parad-pafut-bokil-169",
+            "fields": {},
+            "inventoryNonce": 357,
+            "owner": "sprocket314",
+            "type": "1-C-275-1"
+        },
+        {
+            "assetID": "tirus-zojib-vumab-161",
+            "fields": {},
+            "inventoryNonce": 420,
+            "owner": "sprocket314",
+            "type": "1-C-271-1"
+        },
+        {
+            "assetID": "sosim-zurab-papul-068",
+            "fields": {},
+            "inventoryNonce": 358,
+            "owner": "sprocket314",
+            "type": "1-C-22-1"
+        },
+        {
+            "assetID": "nomor-vadip-nodis-254",
+            "fields": {},
+            "inventoryNonce": 395,
+            "owner": "sprocket314",
+            "type": "1-C-150-1"
+        },
+        {
+            "assetID": "votah-tupop-pusim-039",
+            "fields": {},
+            "inventoryNonce": 359,
+            "owner": "sprocket314",
+            "type": "1-C-171-1"
+        },
+        {
+            "assetID": "bakok-gozir-zopug-144",
+            "fields": {},
+            "inventoryNonce": 362,
+            "owner": "sprocket314",
+            "type": "1-C-118-1"
+        },
+        {
+            "assetID": "damob-tozoh-panut-149",
+            "fields": {},
+            "inventoryNonce": 362,
+            "owner": "sprocket314",
+            "type": "1-C-12-1"
+        },
+        {
+            "assetID": "fobad-gimuj-tufis-220",
+            "fields": {},
+            "inventoryNonce": 362,
+            "owner": "sprocket314",
+            "type": "1-C-249-1"
+        },
+        {
+            "assetID": "kifam-mikuz-fagun-247",
+            "fields": {},
+            "inventoryNonce": 377,
+            "owner": "sprocket314",
+            "type": "1-C-157-1"
+        },
+        {
+            "assetID": "hadaj-havid-fukom-150",
+            "fields": {},
+            "inventoryNonce": 362,
+            "owner": "sprocket314",
+            "type": "1-C-93-1"
+        },
+        {
+            "assetID": "jofaf-tulik-vafat-123",
+            "fields": {},
+            "inventoryNonce": 363,
+            "owner": "sprocket314",
+            "type": "1-C-231-1"
+        },
+        {
+            "assetID": "kozad-bisar-zidon-077",
+            "fields": {},
+            "inventoryNonce": 363,
+            "owner": "sprocket314",
+            "type": "1-C-396-1"
+        },
+        {
+            "assetID": "logig-sidom-luvoj-239",
+            "fields": {},
+            "inventoryNonce": 364,
+            "owner": "sprocket314",
+            "type": "1-C-246-1"
+        },
+        {
+            "assetID": "nizaf-kilil-fohuh-074",
+            "fields": {},
+            "inventoryNonce": 367,
+            "owner": "sprocket314",
+            "type": "1-C-159-1"
+        },
+        {
+            "assetID": "puzan-bidiv-kahup-140",
+            "fields": {},
+            "inventoryNonce": 367,
+            "owner": "sprocket314",
+            "type": "1-C-28-1"
+        },
+        {
+            "assetID": "zaful-pidir-hogih-191",
+            "fields": {},
+            "inventoryNonce": 487,
+            "owner": "sprocket314",
+            "type": "1-C-95-1"
+        },
+        {
+            "assetID": "rapil-turok-parip-040",
+            "fields": {},
+            "inventoryNonce": 389,
+            "owner": "sprocket314",
+            "type": "1-C-145-1"
+        },
+        {
+            "assetID": "rapil-surok-parip-041",
+            "fields": {},
+            "inventoryNonce": 449,
+            "owner": "sprocket314",
+            "type": "1-C-272-1"
+        },
+        {
+            "assetID": "vijap-vijij-tivas-238",
+            "fields": {},
+            "inventoryNonce": 368,
+            "owner": "sprocket314",
+            "type": "1-C-126-1"
+        },
+        {
+            "assetID": "zotut-kihuf-nuhad-037",
+            "fields": {},
+            "inventoryNonce": 368,
+            "owner": "sprocket314",
+            "type": "1-C-175-2"
+        },
+        {
+            "assetID": "bipat-kazuk-zijul-141",
+            "fields": {},
+            "inventoryNonce": 369,
+            "owner": "sprocket314",
+            "type": "1-C-68-1"
+        },
+        {
+            "assetID": "tohop-bazih-baloz-106",
+            "fields": {},
+            "inventoryNonce": 372,
+            "owner": "sprocket314",
+            "type": "1-C-164-2"
+        },
+        {
+            "assetID": "vufal-bovij-jitiv-159",
+            "fields": {},
+            "inventoryNonce": 482,
+            "owner": "sprocket314",
+            "type": "1-C-165-1"
+        },
+        {
+            "assetID": "zasoj-hufiv-hadul-062",
+            "fields": {},
+            "inventoryNonce": 372,
+            "owner": "sprocket314",
+            "type": "1-C-39-1"
+        },
+        {
+            "assetID": "buzun-hukaz-rizij-154",
+            "fields": {},
+            "inventoryNonce": 372,
+            "owner": "sprocket314",
+            "type": "1-C-6-1"
+        },
+        {
+            "assetID": "dutuk-japiz-johif-091",
+            "fields": {},
+            "inventoryNonce": 372,
+            "owner": "sprocket314",
+            "type": "1-C-88-2"
+        },
+        {
+            "assetID": "mitoh-litok-nutar-111",
+            "fields": {},
+            "inventoryNonce": 514,
+            "owner": "sprocket314",
+            "type": "1-C-175-2-O"
+        },
+        {
+            "assetID": "budig-duzot-litun-154",
+            "fields": {},
+            "inventoryNonce": 511,
+            "owner": "sprocket314",
+            "type": "1-C-118-1"
+        },
+        {
+            "assetID": "dulif-zolim-kulif-091",
+            "fields": {},
+            "inventoryNonce": 511,
+            "owner": "sprocket314",
+            "type": "1-C-158-1"
+        },
+        {
+            "assetID": "filif-kofon-burov-241",
+            "fields": {},
+            "inventoryNonce": 511,
+            "owner": "sprocket314",
+            "type": "1-C-276-1"
+        },
+        {
+            "assetID": "gafik-matod-zahar-246",
+            "fields": {},
+            "inventoryNonce": 511,
+            "owner": "sprocket314",
+            "type": "1-C-375-1"
+        },
+        {
+            "assetID": "hufih-bomas-rahot-066",
+            "fields": {},
+            "inventoryNonce": 511,
+            "owner": "sprocket314",
+            "type": "1-C-77-1"
+        },
+        {
+            "assetID": "jijos-zosal-hapib-182",
+            "fields": {},
+            "inventoryNonce": 512,
+            "owner": "sprocket314",
+            "type": "1-C-393-1"
+        },
+        {
+            "assetID": "kimon-turas-sifam-117",
+            "fields": {},
+            "inventoryNonce": 512,
+            "owner": "sprocket314",
+            "type": "1-C-83-1"
+        },
+        {
+            "assetID": "libah-sukut-fokav-141",
+            "fields": {},
+            "inventoryNonce": 513,
+            "owner": "sprocket314",
+            "type": "1-C-147-1"
+        }
+    ]
+}
