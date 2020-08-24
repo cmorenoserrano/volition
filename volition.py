@@ -28,6 +28,17 @@ def getAccountAssets(username):
 
     response = session.get(baseUrl)
     assets = response.json()
+
+    assetUrl = "https://volition-node-beta.pancakehermit.com/assets/"
+    
+    for i in range(0,len(assets["inventory"])):
+        #print(assets["inventory"][i])
+        response = session.get(assetUrl + assets["inventory"][i]["assetID"])
+        fullAsset = response.json()
+        #print(fullAsset)
+        assets["inventory"][i].update({"fields" : fullAsset["asset"]["fields"]})
+#members.update({member["username"] : 0})
+    
     dumps(assets,file_name=username+'/assets.json')
     return assets
 
