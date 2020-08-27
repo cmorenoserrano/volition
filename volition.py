@@ -41,6 +41,20 @@ def getAccountAssets(username):
     dumps(assets,file_name=username+'/assets.json')
     return assets
 
+def getAssetName(asset):
+    assetUrl = "https://volition-node-beta.pancakehermit.com/assets/"
+
+    #print(asset)
+    response = session.get(assetUrl + asset)
+    assetName = response.json()
+    #print(assetName)
+    assetName = assetName["asset"]["fields"]["name"]["value"]
+    #print(assetName)
+    #assetName = assetName[]
+
+    return assetName
+
+
 def getBlocks():
     baseUrl = "https://volition-node-beta.pancakehermit.com/blocks/"
 
@@ -62,7 +76,7 @@ def createLog(blocks):
                     recipient = (bodySplit[0].split(":"))[1]
                     if ("SEND_VOL" in body):
                         amount = bodySplit[1].split(":")[1]
-                        print(amount)
+                        #print(amount)
                         if("accountName" in bodySplit[3]):
                             sender = (bodySplit[3].split(":"))[1]
                             #print(sender)
@@ -71,6 +85,19 @@ def createLog(blocks):
                             f.write(blocks["blocks"]["blocks"][block]["time"]+" : "+blocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\n\n")
 
                     elif ("SEND_ASSETS" in body):
+                        sender = body.split('"accountName\":')
+                        sender = sender[2].split(",")
+                        sender = sender[0]
+                        #print(sender)
+                        assets = body.split("[")
+                        assets = assets[1].split("]")
+                        assets = assets[0]
+                        assets = assets.replace('"','')
+                        assets = assets.split(",")
+                        #print(assets)
+                        for asset in assets:
+                            f.write(blocks["blocks"]["blocks"][block]["time"]+" : "+recipient+" received "+getAssetName(asset)+" from "+sender+"\n\n")
+                            #print(getAssetName(asset))
                         
                     else:
                         f.write(blocks["blocks"]["blocks"][block]["time"]+" : "+blocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\n\n")
