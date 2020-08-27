@@ -41,14 +41,53 @@ def getAccountAssets(username):
     dumps(assets,file_name=username+'/assets.json')
     return assets
 
-def getPlayerStats(username):
-    baseUrl = "https://api.chess.com/pub/player/" + username + "/stats"
+def getBlocks():
+    baseUrl = "https://volition-node-beta.pancakehermit.com/blocks/"
 
     response = session.get(baseUrl)
-    stats = response.json()
-    dumps(stats,file_name=username+'/stats.json')
-    #print(stats)
-    return stats
+    blocks = response.json()
+    dumps(blocks,file_name='blocks.json')
+    #print(blocks)
+    return blocks
+
+def createLog(blocks):
+    #print(blocks["blocks"]["blocks"][0])
+    with open('log.txt','a') as f:
+        for block in range(0,len(blocks["blocks"]["blocks"])):
+            for transaction in range(0,len(blocks["blocks"]["blocks"][block]["transactions"])):
+                body = blocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]
+                bodySplit=body.split(",")
+                #print(body[0])
+                if("accountName" in bodySplit[0]):
+                    recipient = (bodySplit[0].split(":"))[1]
+                    if ("SEND_VOL" in body):
+                        amount = bodySplit[1].split(":")[1]
+                        print(amount)
+                        if("accountName" in bodySplit[3]):
+                            sender = (bodySplit[3].split(":"))[1]
+                            #print(sender)
+                            f.write(blocks["blocks"]["blocks"][block]["time"]+" : "+recipient+" received "+str(amount)+" VOL from "+sender+"\n\n")
+                        else:
+                            f.write(blocks["blocks"]["blocks"][block]["time"]+" : "+blocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\n\n")
+
+                    elif ("SEND_ASSETS" in body):
+                        
+                    else:
+                        f.write(blocks["blocks"]["blocks"][block]["time"]+" : "+blocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\n\n")
+
+                else:
+                    f.write(blocks["blocks"]["blocks"][block]["time"]+" : "+blocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\n\n")
+    return
+
+def updateLog(blocks,newBlocks):
+    with open('log.txt','a') as f:
+        newIndex = len(blocks["blocks"]["blocks"])
+        #newLen = len(newBlocks["blocks"]["blocks"]) - len(blocks["blocks"]["blocks"])
+        for block in range(newIndex,len(newBlocks["blocks"]["blocks"])):
+            for transaction in range(0,len(newBlocks["blocks"]["blocks"][block]["transactions"])):
+                f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\n\n")
+
+    return 
 
 def getClubDetails(clubname):
     baseUrl = "https://api.chess.com/pub/club/" + clubname
@@ -278,9 +317,9 @@ def generateLeagueTable(clubname,results, start_date, end_date,logo):
 
 def getArguments():
     global baseUrl
-    parser = argparse.ArgumentParser(description='Chess.com API data handling script')
+    parser = argparse.ArgumentParser(description='Volition API data handling script')
     parser.add_argument('-u','--username', help='Specific username', required=False)
-    parser.add_argument('-ug','--userGames', help='Download all archived games for a specified user', action='store_true', required=False)
+    parser.add_argument('-log','--log', help='Download the full log', action='store_true', required=False)
     parser.add_argument('-c','--club', help='Specific club', required=False)
     parser.add_argument('-d','--dateRange',help='Specify a date range: dd-mm-yyyy:dd-mm-yyyy',required=False)
     parser.add_argument('-r','--report',help='Generate League table report',action='store_true',required=False)
@@ -459,9 +498,20 @@ def main():
     t +=1
     printProgressBar(t,graphNo)
 
-    if args["userGames"]:
-        if args["username"]:
-            getUserGames(username)
+    if args["log"]:
+        if not os.path.exists("blocks.json"):
+            blocks = getBlocks()
+            newBlocks = blocks
+        else:
+            with open("blocks.json",'r') as f:
+                blocks_load = f.read()
+            blocks = json.loads(blocks_load)
+            newBlocks = getBlocks()
+            
+        if not os.path.exists("log.txt"):
+            createLog(blocks)
+        else:
+            updateLog(blocks,newBlocks)
 
     t +=1
     printProgressBar(t,graphNo)
