@@ -99,21 +99,62 @@ def createLog(blocks):
                             f.write(blocks["blocks"]["blocks"][block]["time"]+" : "+recipient+" received "+getAssetName(asset)+" from "+sender+"\n\n")
                             #print(getAssetName(asset))
                         
-                    else:
+                ''' else:
                         f.write(blocks["blocks"]["blocks"][block]["time"]+" : "+blocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\n\n")
 
                 else:
                     f.write(blocks["blocks"]["blocks"][block]["time"]+" : "+blocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\n\n")
+                '''
     return
 
 def updateLog(blocks,newBlocks):
     with open('log.txt','a') as f:
-        newIndex = len(blocks["blocks"]["blocks"])
-        #newLen = len(newBlocks["blocks"]["blocks"]) - len(blocks["blocks"]["blocks"])
+        newLen = len(newBlocks["blocks"]["blocks"]) - len(blocks["blocks"]["blocks"])
+        if newLen == 0:
+            newIndex = 0
+        else:
+            newIndex = len(blocks["blocks"]["blocks"])
+            
+        #print(newIndex)
+        #print(newLen)
         for block in range(newIndex,len(newBlocks["blocks"]["blocks"])):
             for transaction in range(0,len(newBlocks["blocks"]["blocks"][block]["transactions"])):
-                f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\n\n")
+                body = newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]
+                bodySplit=body.split(",")
+                #print(body[0])
+                if("accountName" in bodySplit[0]):
+                    recipient = (bodySplit[0].split(":"))[1]
+                    if ("SEND_VOL" in body):
+                        amount = bodySplit[1].split(":")[1]
+                        #print(amount)
+                        if("accountName" in bodySplit[3]):
+                            sender = (bodySplit[3].split(":"))[1]
+                            #print(sender)
+                            f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+recipient+" received "+str(amount)+" VOL from "+sender+os.linesep+os.linesep)
+                        else:
+                            f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+os.linesep+os.linesep)
 
+                    elif ("SEND_ASSETS" in body):
+                        sender = body.split('"accountName\":')
+                        sender = sender[2].split(",")
+                        sender = sender[0]
+                        #print(sender)
+                        assets = body.split("[")
+                        assets = assets[1].split("]")
+                        assets = assets[0]
+                        assets = assets.replace('"','')
+                        assets = assets.split(",")
+                        #print(assets)
+                        for asset in assets:
+                            f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+recipient+" received "+getAssetName(asset)+" from "+sender+os.linesep+os.linesep)
+                            #print(getAssetName(asset))
+                        
+                ''' else:
+                        f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+os.linesep+os.linesep)
+
+                else:
+                    f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"os.linesep+os.linesep)
+                '''
     return 
 
 def getClubDetails(clubname):
@@ -535,10 +576,14 @@ def main():
             blocks = json.loads(blocks_load)
             newBlocks = getBlocks()
             
-        if not os.path.exists("log.txt"):
-            createLog(blocks)
-        else:
-            updateLog(blocks,newBlocks)
+        #if not os.path.exists("log.txt"):
+        #    createLog(blocks)
+        #else:
+        #    updateLog(blocks,newBlocks)
+
+        updateLog(blocks,newBlocks)
+
+
 
     t +=1
     printProgressBar(t,graphNo)
