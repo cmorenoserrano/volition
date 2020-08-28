@@ -130,9 +130,9 @@ def updateLog(blocks,newBlocks):
                         if("accountName" in bodySplit[3]):
                             sender = (bodySplit[3].split(":"))[1]
                             #print(sender)
-                            f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+recipient+" received "+str(amount)+" VOL from "+sender+os.linesep+os.linesep)
+                            f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+recipient+" received "+str(amount)+" VOL from "+sender+"\r\n"+"\r\n")
                         else:
-                            f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+os.linesep+os.linesep)
+                            f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\r\n"+"\r\n")
 
                     elif ("SEND_ASSETS" in body):
                         sender = body.split('"accountName\":')
@@ -146,14 +146,14 @@ def updateLog(blocks,newBlocks):
                         assets = assets.split(",")
                         #print(assets)
                         for asset in assets:
-                            f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+recipient+" received "+getAssetName(asset)+" from "+sender+os.linesep+os.linesep)
+                            f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+recipient+" received "+getAssetName(asset)+" from "+sender+"\r\n"+"\r\n")
                             #print(getAssetName(asset))
                         
                 ''' else:
-                        f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+os.linesep+os.linesep)
+                        f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"\r\n"+"\r\n")
 
                 else:
-                    f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+"os.linesep+os.linesep)
+                    f.write(newBlocks["blocks"]["blocks"][block]["time"]+" : "+newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]+""\r\n"+"\r\n")
                 '''
     return 
 
