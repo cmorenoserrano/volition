@@ -11,9 +11,11 @@ import requests
 import json, argparse
 from fpdf import FPDF
 import shutil
+from tinydb import TinyDB, Query
 
 ## ----------------------------------------------------------------------------
 session = requests.Session()
+db = TinyDB('db.json')
 
 def getAccountDetails(username):
     baseUrl = "https://volition-node-beta.pancakehermit.com/accounts/" + username
@@ -157,118 +159,10 @@ def updateLog(blocks,newBlocks):
                 '''
     return 
 
-def getClubDetails(clubname):
-    baseUrl = "https://api.chess.com/pub/club/" + clubname
-
-    response = session.get(baseUrl)
-    clubDetails = response.json()
-    dumps(clubDetails,file_name=clubname+'/details.json')
-    #print(members)
-    return clubDetails
-
-def getClubLogo(clubname):
-    baseUrl = "https://api.chess.com/pub/club/" + clubname
-
-    response = session.get(baseUrl)
-    clubDetails = response.json()
-    clubLogo = clubDetails["icon"]
-    filename = clubLogo.split(".")
-    extension = filename[-1]
-
-    r = requests.get(clubLogo,stream=True)
-    if r.status_code == 200:
-        r.raw.decode_content = True
-        logo = clubname+"/"+clubname+"."+str(extension)
-        #print(logo)
-        with open(logo,'wb') as f:
-            shutil.copyfileobj(r.raw,f)
-            clubLogo = logo
-    else:
-        print("\nError downloading the club's logo. Replacing it with default")
-        clubLogo = 'defaultLogo.jpeg'
-    
-    #print(clubLogo)
-    return clubLogo
-
-
-def getClubMembers(clubname):
-    baseUrl = "https://api.chess.com/pub/club/" + clubname + "/members"
-
-    response = session.get(baseUrl)
-    members = response.json()
-    dumps(members,file_name=clubname+'/members.json')
-    #print(members)
-    return members
-
-def getClubMatches(clubname):
-    baseUrl = "https://api.chess.com/pub/club/" + clubname + "/matches"
-
-    response = session.get(baseUrl)
-    matches = response.json()
-    dumps(matches,file_name=clubname+'/matches.json')
-    #print(matches)
-    return matches
-
-def getResults(clubname,members,scope_finished,scope_in_progress):
-    #print(scope_finished)
-    clubUrl = "https://api.chess.com/pub/club/" + clubname
-    results = {}
-    
-    for match in scope_finished:
-        baseUrl = match["@id"]
-        response = session.get(baseUrl)
-        team_match = response.json()
-        if not os.path.exists(clubname+"/club_matches_finished"):
-            os.mkdir(clubname+"/club_matches_finished")
-        dumps(team_match,file_name=clubname+'/club_matches_finished/'+match["name"]+'.json')
-        for team in team_match["teams"]:
-            if team_match["teams"][team]["@id"] == clubUrl:
-                for player in team_match["teams"][team]["players"]:
-                    if "played_as_black" in player:
-                        if player["played_as_black"] == "win" and player["username"] in members:
-                            members[player["username"]] += 1
-                        if player["played_as_black"] == ("insufficient" or "agreed" or "repetition" or "stalemate" or "50move" or "threecheck" or "timevsinsufficient") and player["username"] in members:
-                            members[player["username"]] += 0.5
-                    if "played_as_white" in player:
-                        if player["played_as_white"] == "win" and player["username"] in members:
-                            members[player["username"]] += 1
-                        if player["played_as_white"] == ("insufficient" or "agreed" or "repetition" or "stalemate" or "50move" or "threecheck" or "timevsinsufficient") and player["username"] in members:
-                            members[player["username"]] += 0.5
-
-    #print(scope_in_progress)
-    for match in scope_in_progress:
-        baseUrl = match["@id"]
-        response = session.get(baseUrl)
-        team_match = response.json()
-        if not os.path.exists(clubname+"/club_matches_in_progress"):
-            os.mkdir(clubname+"/club_matches_in_progress")
-        dumps(team_match,file_name=clubname+'/club_matches_in_progress/'+match["name"]+'.json')
-        for team in team_match["teams"]:
-            if team_match["teams"][team]["@id"] == clubUrl:
-                for player in team_match["teams"][team]["players"]:
-                    if "played_as_black" in player:
-                        if player["played_as_black"] == "win" and player["username"] in members:
-                            members[player["username"]] += 1
-                        if player["played_as_black"] == ("insufficient" or "agreed" or "repetition" or "stalemate" or "50move" or "threecheck" or "timevsinsufficient") and player["username"] in members:
-                            members[player["username"]] += 0.5
-                    if "played_as_white" in player:
-                        if player["played_as_white"] == "win" and player["username"] in members:
-                            members[player["username"]] += 1
-                        if player["played_as_white"] == ("insufficient" or "agreed" or "repetition" or "stalemate" or "50move" or "threecheck" or "timevsinsufficient") and player["username"] in members:
-                            members[player["username"]] += 0.5
-
-    ranking = []
-    for player in members:
-        points = [members[player]]
-        ranking.append([player] + points)
-    ##########################################################################
-    ranking.sort(key = lambda ranking : ranking[1], reverse = True)
-    ##########################################################################
-    #print(ranking)
-                            
-    results = ranking
-    dumps(results,file_name=clubname+'/results.json')
-    return results
+def updateDB(blocks):
+    database = ""
+    print(database)
+    return database
 
 # Print iterations progress
 def printProgressBar (
@@ -291,104 +185,12 @@ def printProgressBar (
 
 #---------------------------------
 
-def generateLeagueTable(clubname,results, start_date, end_date,logo):
-    pdf = PDF()
-    pdf.alias_nb_pages()
-    #components = final
-    header = ['Position','Member','Daily rating','Points']
-    data = []
-    for i in range(1,len(results)+1):
-        if results[i-1][1] > 0:
-            aux = [str(i),results[i-1][0],str(getPlayerStats(results[i-1][0])["chess_daily"]["last"]["rating"]),str(results[i-1][1])]
-            data.append(aux)
-    #print(data)
-    pdf.print_chapter("League Table for "+clubname+"'s Club Daily Matches","",logo)
-    pdf.set_font('Times','',12)
-    pdf.set_text_color(0,0,0)
-    instructions = "Current standings from "+str(start_date)+" to "+str(end_date)
-    pdf.multi_cell(0,7,instructions,0)
-    pdf.ln(5)
-    pdf.set_font('Times','',12)
-    pdf.fancy_table(header,data)
-
-    if not data:
-        print("\nThere was no data available")
-        raise SystemExit
-    details = getPlayerDetails(data[0][1])
-    #print(details)
-    stats = getPlayerStats(data[0][1])
-
-    pdf.print_chapter('Player of the Month',"",logo)
-    pdf.set_font('Times','B',24)
-    pdf.set_text_color(0,0,0)
-    content1 = "This month's Player of the Month was: "+str(data[0][1])
-    pdf.multi_cell(0,7,content1,0)
-    pdf.ln(5)
-    if "avatar" in details:
-        pdf.image(details["avatar"], 230, 50, 33, type='jpeg')
-    else:
-        pdf.image("defaultLogo.jpeg",230,50,33, type='jpeg')
-    pdf.set_font('Times','B',18)
-    content2 = str(data[0][1])+" achieved "+str(data[0][3])+" points in Daily Matches representing our club"
-    pdf.multi_cell(0,7,content2,0)
-    pdf.ln(10)
-    content3 = "Getting to know "+details["username"]+ " better:"
-    pdf.multi_cell(0,7,content3,0)
-    pdf.ln(5)
-    if "name" in details:
-        content4 = "Name: "+details["name"]
-        pdf.multi_cell(0,7,content4,0)
-        pdf.ln(5)
-    content5 = "Joined on "+ time.strftime('%d-%b-%Y', time.localtime(details["joined"]))
-    pdf.multi_cell(0,7,content5,0)
-    pdf.ln(5)
-    content6 = "Daily rating: "+str(stats["chess_daily"]["last"]["rating"])+" (current), "+str(stats["chess_daily"]["best"]["rating"])+ " (best)"
-    pdf.multi_cell(0,7,content6,0)
-    pdf.ln(5)
-    if "chess960_daily" in stats:
-        content7 = "Daily 960 rating: "+str(stats["chess960_daily"]["last"]["rating"])+" (current), "+str(stats["chess960_daily"]["best"]["rating"])+ " (best)"
-        pdf.multi_cell(0,7,content7,0)
-        pdf.ln(5)
-    if "chess_rapid" in stats:
-        content8 = "Rapid rating: "+str(stats["chess_rapid"]["last"]["rating"])+" (current), "+str(stats["chess_rapid"]["best"]["rating"])+ " (best)"
-        pdf.multi_cell(0,7,content8,0)
-        pdf.ln(5)
-    if "chess_blitz" in stats:
-        content9 = "Blitz rating: "+str(stats["chess_blitz"]["last"]["rating"])+" (current), "+str(stats["chess_blitz"]["best"]["rating"])+ " (best)"
-        pdf.multi_cell(0,7,content9,0)
-        pdf.ln(5)
-    if "chess_bullet" in stats:
-        content10 = "Bullet rating: "+str(stats["chess_bullet"]["last"]["rating"])+" (current), "+str(stats["chess_bullet"]["best"]["rating"])+ " (best)"
-        pdf.multi_cell(0,7,content10,0)
-        pdf.ln(5)
-    if "tactics" in stats:
-        content11 = "Tactics rating: "+str(stats["tactics"]["highest"]["rating"])+" (highest)"
-        pdf.multi_cell(0,7,content11,0)
-        pdf.ln(5)
-    if "puzzle_rush" in stats:
-        content6 = "Puzzle Rush score: "+str(stats["puzzle_rush"]["best"]["score"])+" (record)"
-        pdf.multi_cell(0,7,content6,0)
-        pdf.ln(5)
-    
-
-
-    pdf.set_font('Times','',12)
-    pdf.set_text_color(0,0,0)
-    #insert avatar
-    #insert ratings
-    
-    pdf.output(clubname+'/leagueTable.pdf', 'F')
-    #print("PDF generated -> leagueTable.pdf")
-
-
-
-
 def getArguments():
     global baseUrl
     parser = argparse.ArgumentParser(description='Volition API data handling script')
     parser.add_argument('-u','--username', help='Specific username', required=False)
     parser.add_argument('-log','--log', help='Download the full log', action='store_true', required=False)
-    parser.add_argument('-c','--club', help='Specific club', required=False)
+    parser.add_argument('-db','--db', help='Update the database', action='store_true', required=False)
     parser.add_argument('-d','--dateRange',help='Specify a date range: dd-mm-yyyy:dd-mm-yyyy',required=False)
     parser.add_argument('-r','--report',help='Generate League table report',action='store_true',required=False)
     
@@ -538,18 +340,8 @@ def main():
     t, graphNo = 0, 4
     printProgressBar(t,graphNo)
     username = ""
-    club = ""
-    scope_finished = {}
-    scope_in_progress = {}
     args = getArguments()
-    if args["dateRange"]:
-        dateRange = args["dateRange"].split(":",1)
-        first = dateRange[0].split("-",2)
-        last = dateRange[1].split("-",2)
-        start_date = dateRange[0]
-        start_epoch = round(datetime.datetime(int(first[2]),int(first[1]),int(first[0])).timestamp())
-        end_date = dateRange[1]
-        end_epoch = round(datetime.datetime(int(last[2]),int(last[1]),int(last[0])).timestamp())
+
 
     t +=1
     printProgressBar(t,graphNo)
@@ -584,70 +376,24 @@ def main():
         updateLog(blocks,newBlocks)
 
 
-
     t +=1
     printProgressBar(t,graphNo)
 
-    if args["club"]:
-        club = args["club"]
-        if not os.path.exists(club):
-            os.mkdir(club)
-        clubDetails = getClubDetails(club)
-        clubLogo = getClubLogo(club)
-        members = getClubMembers(club)
-        matches = getClubMatches(club)
-        if args["dateRange"]:
-            scope_finished = list(filter(lambda match: (match["start_time"] >= start_epoch) and (match["start_time"] <= end_epoch), matches["finished"]))
-            scope_in_progress = matches["in_progress"]
+
+    if args["db"]:
+        if not os.path.exists("blocks.json"):
+            blocks = getBlocks()
+            newBlocks = blocks
+        else:
+            with open("blocks.json",'r') as f:
+                blocks_load = f.read()
+            blocks = json.loads(blocks_load)
+            newBlocks = getBlocks()
+        database = updateDB(newBlocks)
+        print(database)
 
     t +=1
     printProgressBar(t,graphNo)
-
-    if args["report"]:
-        if args["club"]:
-            if args["dateRange"]:
-                t, graphNo = 0, 5
-                printProgressBar(t,graphNo)
-                members = {}
-                clubMembers = getClubMembers(club)
-                for member in clubMembers["weekly"]:
-                    members.update({member["username"] : 0})
-                for member in clubMembers["monthly"]:
-                    members.update({member["username"] : 0})
-                for member in clubMembers["all_time"]:
-                    members.update({member["username"] : 0})
-                matches = getClubMatches(club)
-
-                t +=1
-                printProgressBar(t,graphNo)
-
-                scope_finished = list(filter(lambda match: (match["start_time"] >= start_epoch) and (match["start_time"] <= end_epoch), matches["finished"]))
-
-                t +=1
-                printProgressBar(t,graphNo)
-                
-                scope_in_progress = matches["in_progress"]
-
-                t +=1
-                printProgressBar(t,graphNo)
-
-                results = getResults(club,members,scope_finished,scope_in_progress)
-
-                t +=1
-                printProgressBar(t,graphNo)
-                
-                generateLeagueTable(club,results,start_date,end_date,getClubLogo(club))
-
-                t +=1
-                printProgressBar(t,graphNo)
-
-
-  
-
-    #####Present League Table by tiers ranked based on points
-    #####Additional features like player of the week, most improved player, top ranking by time control, etc.
-    
-
 
 	
 #-----------------------------------------------------------------------------
