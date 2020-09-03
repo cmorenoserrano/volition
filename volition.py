@@ -68,8 +68,12 @@ def getBlocks():
 
 def createLog(blocks):
     #print(blocks["blocks"]["blocks"][0])
+    t, blockNo = 0, len(blocks["blocks"]["blocks"][block]["transactions"])
+    printProgressBar(t,blockNo)
     with open('log.txt','a') as f:
         for block in range(0,len(blocks["blocks"]["blocks"])):
+            t +=1
+            printProgressBar(t,blockNo)
             for transaction in range(0,len(blocks["blocks"]["blocks"][block]["transactions"])):
                 body = blocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]
                 bodySplit=body.split(",")
@@ -110,6 +114,8 @@ def createLog(blocks):
     return
 
 def updateLog(blocks,newBlocks):
+    t, blockNo = 0, len(newBlocks["blocks"]["blocks"])
+    printProgressBar(t,blockNo)
     with open('log.txt','a') as f:
         newLen = len(newBlocks["blocks"]["blocks"]) - len(blocks["blocks"]["blocks"])
         if newLen == 0:
@@ -120,6 +126,8 @@ def updateLog(blocks,newBlocks):
         #print(newIndex)
         #print(newLen)
         for block in range(newIndex,len(newBlocks["blocks"]["blocks"])):
+            t+=1
+            printProgressBar(t,blockNo)
             for transaction in range(0,len(newBlocks["blocks"]["blocks"][block]["transactions"])):
                 body = newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]
                 bodySplit=body.split(",")
@@ -159,9 +167,41 @@ def updateLog(blocks,newBlocks):
                 '''
     return 
 
-def updateDB(blocks):
+def updateDB(blocks,newBlocks):
+    t, blockNo = 0, len(newBlocks["blocks"]["blocks"])
+    printProgressBar(t,blockNo)
     database = ""
-    print(database)
+    with open('schema.txt','a') as f:
+        newLen = len(newBlocks["blocks"]["blocks"]) - len(blocks["blocks"]["blocks"])
+        if newLen == 0:
+            newIndex = 0
+        else:
+            newIndex = len(blocks["blocks"]["blocks"])
+            
+        #print(newIndex)
+        #print(newLen)
+        for block in range(newIndex,len(newBlocks["blocks"]["blocks"])):
+            t+=1
+            printProgressBar(t,blockNo)
+            for transaction in range(0,len(newBlocks["blocks"]["blocks"][block]["transactions"])):
+                body = newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]
+                if ("PUBLISH_SCHEMA" in body):
+                    releaseVal = body[(body.find("release")+9) : (body.find("}}",body.find("release")+9))]
+                    cards = body[(body.find("definitions")+14) : (body.find("}}}},",body.find("definitions")+14))+3]
+                    cards = cards.split("}}},")
+                    for card in cards:
+                        cardID = card.split(":")[0]
+                        cardDict = {}
+                        cardDict.update({cardID : card})
+                        cardDict.update({"release" : releaseVal})
+                        f.write(str(cardDict)+"\r\n"+"\r\n")
+                        db.insert(cardDict)
+                    
+                    #f.write(body+"\r\n"+"\r\n")
+        print(db)
+        #test = Query()
+        #test1 = db.search(test.release == '"Volition","major":0,"minor":0,"revision":9')
+        #print(test1)
     return database
 
 # Print iterations progress
@@ -337,15 +377,8 @@ def output_pdf(pages, filename):
 
 #-----------------------------------------------------------------------------
 def main():
-    t, graphNo = 0, 4
-    printProgressBar(t,graphNo)
     username = ""
     args = getArguments()
-
-
-    t +=1
-    printProgressBar(t,graphNo)
-
     
     if args["username"]:
         username = args["username"]
@@ -354,9 +387,6 @@ def main():
         getAccountDetails(username)
         getAccountAssets(username)
         #getPlayerStats(username)
-
-    t +=1
-    printProgressBar(t,graphNo)
 
     if args["log"]:
         if not os.path.exists("blocks.json"):
@@ -376,10 +406,6 @@ def main():
         updateLog(blocks,newBlocks)
 
 
-    t +=1
-    printProgressBar(t,graphNo)
-
-
     if args["db"]:
         if not os.path.exists("blocks.json"):
             blocks = getBlocks()
@@ -389,11 +415,8 @@ def main():
                 blocks_load = f.read()
             blocks = json.loads(blocks_load)
             newBlocks = getBlocks()
-        database = updateDB(newBlocks)
+        database = updateDB(blocks,newBlocks)
         print(database)
-
-    t +=1
-    printProgressBar(t,graphNo)
 
 	
 #-----------------------------------------------------------------------------
