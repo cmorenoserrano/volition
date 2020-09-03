@@ -177,25 +177,61 @@ def updateDB(blocks,newBlocks):
             newIndex = 0
         else:
             newIndex = len(blocks["blocks"]["blocks"])
-            
+
+        #
+        #
+        #
+        
         #print(newIndex)
         #print(newLen)
         for block in range(newIndex,len(newBlocks["blocks"]["blocks"])):
             t+=1
             printProgressBar(t,blockNo)
+            fields = ["setID","assetType","assetID","version","alternate","name","layout","layout_prefix","layout_color","group","totalclout","clout","TYPE","supertype","type","subtype","rules","RULESCRAFT","attack","defense","slot","set","rarity","setNumber","ARTIST","IMAGE","image-overlay","flavor","RARITY","MAX_SLOTS","USED_SLOTS","C_ART","ACLOUT","BCLOUT","DCLOUT","ECLOUT","GCLOUT","TCLOUT","OCLOUT"]
+            fields2 = ["type","value","mutable"]
             for transaction in range(0,len(newBlocks["blocks"]["blocks"][block]["transactions"])):
                 body = newBlocks["blocks"]["blocks"][block]["transactions"][transaction]["body"]
                 if ("PUBLISH_SCHEMA" in body):
                     releaseVal = body[(body.find("release")+9) : (body.find("}}",body.find("release")+9))]
                     cards = body[(body.find("definitions")+14) : (body.find("}}}},",body.find("definitions")+14))+3]
                     cards = cards.split("}}},")
+                    for i in range(0,len(cards)):
+                        cards[i]= str(cards[i])+"}"
+                    #print(cards)
+                    #print("\n")
                     for card in cards:
                         cardID = card.split(":")[0]
-                        cardDict = {}
-                        cardDict.update({cardID : card})
-                        cardDict.update({"release" : releaseVal})
-                        f.write(str(cardDict)+"\r\n"+"\r\n")
-                        db.insert(cardDict)
+                        if cardID.split("-")[1] == 'C':
+                            cardDict = {}
+                            cardDict.update({cardID : {}})
+                            cardDict[cardID].update({"fields" : {}})
+                            #print(card)
+                            #print("\n")
+                            for field in range(0,len(fields)):
+                                cardDict[cardID]["fields"].update({fields[field] : {}})
+                                fieldVal = card.split(fields[field]+'":{')[1]
+                                fieldVal = fieldVal.split("}")[0]
+                                fieldVal = fieldVal+"}"
+                                typeVal = fieldVal.split('"type":')[1]
+                                typeVal = typeVal.split(",")[0]
+                                valueVal = fieldVal.split('"value":')[1]
+                                valueVal = valueVal.split(",")[0]
+                                mutableVal = fieldVal.split('"mutable":')[1]
+                                mutableVal = mutableVal.split("}")[0]
+                                for field2 in range(0,len(fields2)):
+                                    if fields2[field2] == "type":
+                                        value = typeVal
+                                    elif fields2[field2] == "value":
+                                        value = valueVal
+                                    elif fields2[field2] == "mutable":
+                                        value = mutableVal
+                                    else:
+                                        value = "error"
+                                    cardDict[cardID]["fields"][fields[field]].update({fields2[field2] : value})
+                                    #print(cardID+" : "+fields[field]+" : "+value)
+                            cardDict.update({"release" : releaseVal})
+                            f.write(str(cardDict)+"\r\n"+"\r\n")
+                            db.insert(cardDict)
                     
                     #f.write(body+"\r\n"+"\r\n")
         print(db)
@@ -395,8 +431,8 @@ def main():
         else:
             with open("blocks.json",'r') as f:
                 blocks_load = f.read()
-            blocks = json.loads(blocks_load)
-            newBlocks = getBlocks()
+                blocks = json.loads(blocks_load)
+                newBlocks = getBlocks()
             
         #if not os.path.exists("log.txt"):
         #    createLog(blocks)
