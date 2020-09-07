@@ -167,6 +167,27 @@ def updateLog(blocks,newBlocks):
                 '''
     return 
 
+def extractFields(card):
+    card = '"1-C-90-3":{"fields":{"setID":{"type":"NUMERIC","value":1,"mutable":false},"assetType":{"type":"STRING","value":"C","mutable":false},"assetID":{"type":"NUMERIC","value":90,"mutable":false},"version":{"type":"NUMERIC","value":3,"mutable":false},"alternate":{"type":"STRING","value":"","mutable":false},"name":{"type":"STRING","value":"You\'re Comin\' With Me","mutable":false},"layout":{"type":"STRING","value":"trap.1, T","mutable":true},"layout_prefix":{"type":"STRING","value":"trap.1","mutable":false},"layout_color":{"type":"STRING","value":"T","mutable":false},"group":{"type":"STRING","value":"<@T-Group>","mutable":false},"totalclout":{"type":"NUMERIC","value":6,"mutable":true},"clout":{"type":"STRING","value":"3<$icon_y:-20%><@T><$> 3<$icon_y:-20%><@O><$>","mutable":true},"TYPE":{"type":"STRING","value":"","mutable":false},"supertype":{"type":"STRING","value":"","mutable":false},"type":{"type":"STRING","value":"Trap","mutable":false},"subtype":{"type":"STRING","value":"","mutable":false},"rules":{"type":"STRING","value":"If one or more of your mortals were destroyed this turn, you may destroy up to 2 mortals.","mutable":true},"RULESCRAFT":{"type":"STRING","value":"","mutable":false},"attack":{"type":"STRING","value":"","mutable":true},"defense":{"type":"STRING","value":"","mutable":true},"slot":{"type":"STRING","value":"","mutable":true},"set":{"type":"STRING","value":"The Most Beta","mutable":false},"rarity":{"type":"STRING","value":"<$95% #0033ff>UNCOMMON<$>","mutable":true},"setNumber":{"type":"STRING","value":"195/200","mutable":false},"ARTIST":{"type":"STRING","value":"Arty McArtison","mutable":true},"IMAGE":{"type":"STRING","value":"https://i.imgur.com/u4fudnh.jpg","mutable":true},"image-overlay":{"type":"STRING","value":"","mutable":false},"image-overlay2":{"type":"STRING","value":"","mutable":true},"flavor":{"type":"STRING","value":"Bring me pain and I\'ll bring you with.","mutable":false},"RARITY":{"type":"STRING","value":"uncommon","mutable":true},"MAX_SLOTS":{"type":"NUMERIC","value":0,"mutable":false},"USED_SLOTS":{"type":"NUMERIC","value":0,"mutable":true},"C_ART":{"type":"NUMERIC","value":0,"mutable":true},"ACLOUT":{"type":"NUMERIC","value":0,"mutable":true},"BCLOUT":{"type":"NUMERIC","value":0,"mutable":true},"DCLOUT":{"type":"NUMERIC","value":0,"mutable":true},"ECLOUT":{"type":"NUMERIC","value":0,"mutable":true},"GCLOUT":{"type":"NUMERIC","value":0,"mutable":true},"TCLOUT":{"type":"NUMERIC","value":3,"mutable":true},"OCLOUT":{"type":"NUMERIC","value":3,"mutable":true}'
+    cardChopped = card[card.find("fields:{")+23 :] #Use method to count how many characters are needed to be inserted
+    #print(cardChopped)
+    fields = cardChopped.split("},")
+    print(fields)
+    fieldsDict = {}
+    fieldNo = cardChopped.count("{")
+    for i in range(0,fieldNo):
+        fieldsDict.update({ (cardChopped.split("}")[i]).split(":")[0]: {fields[i]} })
+
+
+
+                    #releaseVal = body[(body.find("release")+9) : (body.find("}}",body.find("release")+9))]
+                    #cards = body[(body.find("definitions")+14) : (body.find("}}}},",body.find("definitions")+14))+3]
+    #fields = fields.split("}")
+    #print(card)
+    print(fieldsDict)
+    return fieldsDict
+
+
 def updateDB(blocks,newBlocks):
     t, blockNo = 0, len(newBlocks["blocks"]["blocks"])
     printProgressBar(t,blockNo)
@@ -179,13 +200,14 @@ def updateDB(blocks,newBlocks):
             newIndex = len(blocks["blocks"]["blocks"])
 
         #
-        #
+        newIndex = 850
         #
         
         #print(newIndex)
         #print(newLen)
         for block in range(newIndex,len(newBlocks["blocks"]["blocks"])):
             t+=1
+            value = ""
             printProgressBar(t,blockNo)
             fields = ["setID","assetType","assetID","version","alternate","name","layout","layout_prefix","layout_color","group","totalclout","clout","TYPE","supertype","type","subtype","rules","RULESCRAFT","attack","defense","slot","set","rarity","setNumber","ARTIST","IMAGE","image-overlay","flavor","RARITY","MAX_SLOTS","USED_SLOTS","C_ART","ACLOUT","BCLOUT","DCLOUT","ECLOUT","GCLOUT","TCLOUT","OCLOUT"]
             fields2 = ["type","value","mutable"]
@@ -199,23 +221,47 @@ def updateDB(blocks,newBlocks):
                         cards[i]= str(cards[i])+"}"
                     #print(cards)
                     #print("\n")
-                    for card in cards:
-                        cardID = card.split(":")[0]
+                    for card in range(0,len(cards)):
+                        cardID = cards[card].split(":")[0]
                         if cardID.split("-")[1] == 'C':
                             cardDict = {}
                             cardDict.update({cardID : {}})
                             cardDict[cardID].update({"fields" : {}})
-                            #print(card)
+                            #print(cardID)
                             #print("\n")
-                            for field in range(0,len(fields)):
-                                cardDict[cardID]["fields"].update({fields[field] : {}})
-                                fieldVal = card.split(fields[field]+'":{')[1]
-                                fieldVal = fieldVal.split("}")[0]
-                                fieldVal = fieldVal+"}"
+                            ##ALL GOOD UNTIL HERE. Not all fields in all of the cards. Some have 'owner' and some don't. Range misaligned.
+                            extractFields(cards[card])
+                            '''for field in fields:
+                                ################if
+                                
+                                cardDict[cardID]["fields"].update({field : {}})
+                                fieldVal = cards[card].split(fields[field]+'":{')[1]
+
+
+
+                                
+                                #fieldVal = (cards[card].split(fields[field]+'":{')[1]).split("}")[0]
+                                #print(cards[card]+" : "+fields[field]+" : "+fieldVal)
+                                #print("\n")
+                                
+                                fieldVal2 = fieldVal.split("}")[0]
+                                fieldVal3 = fieldVal2+"}"
+                                #print(cards[card]+" : "+fields[field]+" : "+fieldVal)
+                                #print("\n")
                                 typeVal = fieldVal.split('"type":')[1]
-                                typeVal = typeVal.split(",")[0]
-                                valueVal = fieldVal.split('"value":')[1]
-                                valueVal = valueVal.split(",")[0]
+                                typeVal = typeVal.split(',"value"')[0]
+                                ###
+                                if fields[field] == "clout":
+                                    valueVal = cards[card].split('"value":')[1]
+                                    #print(valueVal)
+                                    #print("\n")
+                                    valueVal = valueVal.split(',"mutable"')[0]
+                                    
+                                else:
+                                    valueVal = fieldVal.split('"value":')[1]
+                                    valueVal = valueVal.split(',"mutable"')[0]
+                                #print(valueVal)
+                                #print("\n")
                                 mutableVal = fieldVal.split('"mutable":')[1]
                                 mutableVal = mutableVal.split("}")[0]
                                 for field2 in range(0,len(fields2)):
@@ -232,11 +278,11 @@ def updateDB(blocks,newBlocks):
                             cardDict.update({"release" : releaseVal})
                             f.write(str(cardDict)+"\r\n"+"\r\n")
                             db.insert(cardDict)
-                    
+                    '''
                     #f.write(body+"\r\n"+"\r\n")
         print(db)
         #test = Query()
-        #test1 = db.search(test.release == '"Volition","major":0,"minor":0,"revision":9')
+        #test1 = db.search(test.release == '"Volition","major":0,"minor":0,"revision":8')
         #print(test1)
     return database
 
