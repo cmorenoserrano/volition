@@ -168,23 +168,32 @@ def updateLog(blocks,newBlocks):
     return 
 
 def extractFields(card):
-    card = '"1-C-90-3":{"fields":{"setID":{"type":"NUMERIC","value":1,"mutable":false},"assetType":{"type":"STRING","value":"C","mutable":false},"assetID":{"type":"NUMERIC","value":90,"mutable":false},"version":{"type":"NUMERIC","value":3,"mutable":false},"alternate":{"type":"STRING","value":"","mutable":false},"name":{"type":"STRING","value":"You\'re Comin\' With Me","mutable":false},"layout":{"type":"STRING","value":"trap.1, T","mutable":true},"layout_prefix":{"type":"STRING","value":"trap.1","mutable":false},"layout_color":{"type":"STRING","value":"T","mutable":false},"group":{"type":"STRING","value":"<@T-Group>","mutable":false},"totalclout":{"type":"NUMERIC","value":6,"mutable":true},"clout":{"type":"STRING","value":"3<$icon_y:-20%><@T><$> 3<$icon_y:-20%><@O><$>","mutable":true},"TYPE":{"type":"STRING","value":"","mutable":false},"supertype":{"type":"STRING","value":"","mutable":false},"type":{"type":"STRING","value":"Trap","mutable":false},"subtype":{"type":"STRING","value":"","mutable":false},"rules":{"type":"STRING","value":"If one or more of your mortals were destroyed this turn, you may destroy up to 2 mortals.","mutable":true},"RULESCRAFT":{"type":"STRING","value":"","mutable":false},"attack":{"type":"STRING","value":"","mutable":true},"defense":{"type":"STRING","value":"","mutable":true},"slot":{"type":"STRING","value":"","mutable":true},"set":{"type":"STRING","value":"The Most Beta","mutable":false},"rarity":{"type":"STRING","value":"<$95% #0033ff>UNCOMMON<$>","mutable":true},"setNumber":{"type":"STRING","value":"195/200","mutable":false},"ARTIST":{"type":"STRING","value":"Arty McArtison","mutable":true},"IMAGE":{"type":"STRING","value":"https://i.imgur.com/u4fudnh.jpg","mutable":true},"image-overlay":{"type":"STRING","value":"","mutable":false},"image-overlay2":{"type":"STRING","value":"","mutable":true},"flavor":{"type":"STRING","value":"Bring me pain and I\'ll bring you with.","mutable":false},"RARITY":{"type":"STRING","value":"uncommon","mutable":true},"MAX_SLOTS":{"type":"NUMERIC","value":0,"mutable":false},"USED_SLOTS":{"type":"NUMERIC","value":0,"mutable":true},"C_ART":{"type":"NUMERIC","value":0,"mutable":true},"ACLOUT":{"type":"NUMERIC","value":0,"mutable":true},"BCLOUT":{"type":"NUMERIC","value":0,"mutable":true},"DCLOUT":{"type":"NUMERIC","value":0,"mutable":true},"ECLOUT":{"type":"NUMERIC","value":0,"mutable":true},"GCLOUT":{"type":"NUMERIC","value":0,"mutable":true},"TCLOUT":{"type":"NUMERIC","value":3,"mutable":true},"OCLOUT":{"type":"NUMERIC","value":3,"mutable":true}'
-    cardChopped = card[card.find("fields:{")+23 :] #Use method to count how many characters are needed to be inserted
-    #print(cardChopped)
-    fields = cardChopped.split("},")
-    print(fields)
+    #card = '"1-C-90-3":{"fields":{"setID":{"type":"NUMERIC","value":1,"mutable":false},"assetType":{"type":"STRING","value":"C","mutable":false},"assetID":{"type":"NUMERIC","value":90,"mutable":false},"version":{"type":"NUMERIC","value":3,"mutable":false},"alternate":{"type":"STRING","value":"","mutable":false},"name":{"type":"STRING","value":"You\'re Comin\' With Me","mutable":false},"layout":{"type":"STRING","value":"trap.1, T","mutable":true},"layout_prefix":{"type":"STRING","value":"trap.1","mutable":false},"layout_color":{"type":"STRING","value":"T","mutable":false},"group":{"type":"STRING","value":"<@T-Group>","mutable":false},"totalclout":{"type":"NUMERIC","value":6,"mutable":true},"clout":{"type":"STRING","value":"3<$icon_y:-20%><@T><$> 3<$icon_y:-20%><@O><$>","mutable":true},"TYPE":{"type":"STRING","value":"","mutable":false},"supertype":{"type":"STRING","value":"","mutable":false},"type":{"type":"STRING","value":"Trap","mutable":false},"subtype":{"type":"STRING","value":"","mutable":false},"rules":{"type":"STRING","value":"If one or more of your mortals were destroyed this turn, you may destroy up to 2 mortals.","mutable":true},"RULESCRAFT":{"type":"STRING","value":"","mutable":false},"attack":{"type":"STRING","value":"","mutable":true},"defense":{"type":"STRING","value":"","mutable":true},"slot":{"type":"STRING","value":"","mutable":true},"set":{"type":"STRING","value":"The Most Beta","mutable":false},"rarity":{"type":"STRING","value":"<$95% #0033ff>UNCOMMON<$>","mutable":true},"setNumber":{"type":"STRING","value":"195/200","mutable":false},"ARTIST":{"type":"STRING","value":"Arty McArtison","mutable":true},"IMAGE":{"type":"STRING","value":"https://i.imgur.com/u4fudnh.jpg","mutable":true},"image-overlay":{"type":"STRING","value":"","mutable":false},"image-overlay2":{"type":"STRING","value":"","mutable":true},"flavor":{"type":"STRING","value":"Bring me pain and I\'ll bring you with.","mutable":false},"RARITY":{"type":"STRING","value":"uncommon","mutable":true},"MAX_SLOTS":{"type":"NUMERIC","value":0,"mutable":false},"USED_SLOTS":{"type":"NUMERIC","value":0,"mutable":true},"C_ART":{"type":"NUMERIC","value":0,"mutable":true},"ACLOUT":{"type":"NUMERIC","value":0,"mutable":true},"BCLOUT":{"type":"NUMERIC","value":0,"mutable":true},"DCLOUT":{"type":"NUMERIC","value":0,"mutable":true},"ECLOUT":{"type":"NUMERIC","value":0,"mutable":true},"GCLOUT":{"type":"NUMERIC","value":0,"mutable":true},"TCLOUT":{"type":"NUMERIC","value":3,"mutable":true},"OCLOUT":{"type":"NUMERIC","value":3,"mutable":true}'
+    #print(card.find("fields"))
     fieldsDict = {}
-    fieldNo = cardChopped.count("{")
-    for i in range(0,fieldNo):
-        fieldsDict.update({ (cardChopped.split("}")[i]).split(":")[0]: {fields[i]} })
-
-
-
-                    #releaseVal = body[(body.find("release")+9) : (body.find("}}",body.find("release")+9))]
-                    #cards = body[(body.find("definitions")+14) : (body.find("}}}},",body.find("definitions")+14))+3]
-    #fields = fields.split("}")
-    #print(card)
-    print(fieldsDict)
+    if card.find("fields") != -1:
+        cardChopped = card[card.find("fields")+9 :] #Use method to count how many characters are needed to be inserted
+        #print(cardChopped)
+        fields = cardChopped.split("},")
+        #print(fields)
+        fieldNo = cardChopped.count("{")
+        for i in range(0,fieldNo):
+            fieldName = (cardChopped.split("},")[i]).split(":")[0]
+            fieldsDict.update({fieldName : {}})
+            fieldsChopped = fields[i][fields[i].find('"type":"') :]
+            fieldsChopped = fieldsChopped.split("}")[0]
+            fieldType = fieldsChopped.split(',"')[0]
+            fieldType = fieldType.split(":")
+            fieldValue = '"' + fieldsChopped.split(',"')[1]
+            fieldValueName = fieldValue.split(":")[0]
+            fieldValue = fieldValue[fieldValue.find('"value":') +8 :]
+            fieldMutable = '"' + fieldsChopped.split(',"')[2]
+            fieldMutable = fieldMutable.split(":")
+            #print(fieldValue)
+            fieldsDict[fieldName].update( {fieldType[0] : fieldType[1]} )
+            fieldsDict[fieldName].update({fieldValueName : fieldValue})
+            fieldsDict[fieldName].update({fieldMutable[0] : fieldMutable[1]})
+        #print(fieldsDict)
     return fieldsDict
 
 
@@ -223,63 +232,67 @@ def updateDB(blocks,newBlocks):
                     #print("\n")
                     for card in range(0,len(cards)):
                         cardID = cards[card].split(":")[0]
-                        if cardID.split("-")[1] == 'C':
-                            cardDict = {}
-                            cardDict.update({cardID : {}})
-                            cardDict[cardID].update({"fields" : {}})
+                        if cardID.find("-C-") != -1:
                             #print(cardID)
-                            #print("\n")
-                            ##ALL GOOD UNTIL HERE. Not all fields in all of the cards. Some have 'owner' and some don't. Range misaligned.
-                            extractFields(cards[card])
-                            '''for field in fields:
-                                ################if
-                                
-                                cardDict[cardID]["fields"].update({field : {}})
-                                fieldVal = cards[card].split(fields[field]+'":{')[1]
-
-
-
-                                
-                                #fieldVal = (cards[card].split(fields[field]+'":{')[1]).split("}")[0]
-                                #print(cards[card]+" : "+fields[field]+" : "+fieldVal)
+                            if cardID.split("-")[1] == 'C':
+                                cardDict = {}
+                                cardDict.update({cardID : {}})
+                                cardDict[cardID].update({"fields" : extractFields(cards[card])})
+                                #print(cardID)
                                 #print("\n")
-                                
-                                fieldVal2 = fieldVal.split("}")[0]
-                                fieldVal3 = fieldVal2+"}"
-                                #print(cards[card]+" : "+fields[field]+" : "+fieldVal)
-                                #print("\n")
-                                typeVal = fieldVal.split('"type":')[1]
-                                typeVal = typeVal.split(',"value"')[0]
-                                ###
-                                if fields[field] == "clout":
-                                    valueVal = cards[card].split('"value":')[1]
+                                ##ALL GOOD UNTIL HERE. Not all fields in all of the cards. Some have 'owner' and some don't. Range misaligned.
+                                #extractFields(cards[card])
+                                '''for field in fields:
+                                    ################if
+                                    
+                                    cardDict[cardID]["fields"].update({field : {}})
+                                    fieldVal = cards[card].split(fields[field]+'":{')[1]
+
+
+
+                                    
+                                    #fieldVal = (cards[card].split(fields[field]+'":{')[1]).split("}")[0]
+                                    #print(cards[card]+" : "+fields[field]+" : "+fieldVal)
+                                    #print("\n")
+                                    
+                                    fieldVal2 = fieldVal.split("}")[0]
+                                    fieldVal3 = fieldVal2+"}"
+                                    #print(cards[card]+" : "+fields[field]+" : "+fieldVal)
+                                    #print("\n")
+                                    typeVal = fieldVal.split('"type":')[1]
+                                    typeVal = typeVal.split(',"value"')[0]
+                                    ###
+                                    if fields[field] == "clout":
+                                        valueVal = cards[card].split('"value":')[1]
+                                        #print(valueVal)
+                                        #print("\n")
+                                        valueVal = valueVal.split(',"mutable"')[0]
+                                        
+                                    else:
+                                        valueVal = fieldVal.split('"value":')[1]
+                                        valueVal = valueVal.split(',"mutable"')[0]
                                     #print(valueVal)
                                     #print("\n")
-                                    valueVal = valueVal.split(',"mutable"')[0]
-                                    
-                                else:
-                                    valueVal = fieldVal.split('"value":')[1]
-                                    valueVal = valueVal.split(',"mutable"')[0]
-                                #print(valueVal)
-                                #print("\n")
-                                mutableVal = fieldVal.split('"mutable":')[1]
-                                mutableVal = mutableVal.split("}")[0]
-                                for field2 in range(0,len(fields2)):
-                                    if fields2[field2] == "type":
-                                        value = typeVal
-                                    elif fields2[field2] == "value":
-                                        value = valueVal
-                                    elif fields2[field2] == "mutable":
-                                        value = mutableVal
-                                    else:
-                                        value = "error"
-                                    cardDict[cardID]["fields"][fields[field]].update({fields2[field2] : value})
-                                    #print(cardID+" : "+fields[field]+" : "+value)
-                            cardDict.update({"release" : releaseVal})
-                            f.write(str(cardDict)+"\r\n"+"\r\n")
-                            db.insert(cardDict)
-                    '''
-                    #f.write(body+"\r\n"+"\r\n")
+                                    mutableVal = fieldVal.split('"mutable":')[1]
+                                    mutableVal = mutableVal.split("}")[0]
+                                    for field2 in range(0,len(fields2)):
+                                        if fields2[field2] == "type":
+                                            value = typeVal
+                                        elif fields2[field2] == "value":
+                                            value = valueVal
+                                        elif fields2[field2] == "mutable":
+                                            value = mutableVal
+                                        else:
+                                            value = "error"
+                                        cardDict[cardID]["fields"][fields[field]].update({fields2[field2] : value})
+                                        #print(cardID+" : "+fields[field]+" : "+value)
+                        '''
+                                cardDict.update({"release" : releaseVal})
+                                #print(cardDict)
+                                f.write(str(cardDict)+"\r\n"+"\r\n")
+                                db.insert(cardDict)
+                        
+                    #f.write(body+"\r\n"+"\r\n") #To include other transactions and assets too
         print(db)
         #test = Query()
         #test1 = db.search(test.release == '"Volition","major":0,"minor":0,"revision":8')
