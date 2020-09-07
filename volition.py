@@ -209,7 +209,7 @@ def updateDB(blocks,newBlocks):
             newIndex = len(blocks["blocks"]["blocks"])
 
         #
-        newIndex = 850
+        #newIndex = 850
         #
         
         #print(newIndex)
