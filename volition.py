@@ -217,6 +217,11 @@ def updateDB():
             newBlocks = getBlocks()
             blocksLen = len(blocks["blocks"]["blocks"])
             newBlocksLen = len(newBlocks["blocks"]["blocks"])
+
+    if not os.path.exists("db.json"):
+        blocksLen = 0
+    elif os.stat("db.json").st_size == 0:
+        blocksLen = 0
             
     t, blockNo = 0, newBlocksLen - blocksLen
     if blockNo != 0:
