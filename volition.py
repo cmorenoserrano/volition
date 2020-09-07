@@ -113,19 +113,26 @@ def createLog(blocks):
                 '''
     return
 
-def updateLog(blocks,newBlocks):
-    t, blockNo = 0, len(newBlocks["blocks"]["blocks"])
-    printProgressBar(t,blockNo)
-    with open('log.txt','a') as f:
-        newLen = len(newBlocks["blocks"]["blocks"]) - len(blocks["blocks"]["blocks"])
-        if newLen == 0:
-            newIndex = 0
-        else:
-            newIndex = len(blocks["blocks"]["blocks"])
+def updateLog():
+    if not os.path.exists("blocks.json"):
+        blocks = getBlocks()
+        newBlocks = blocks
+        blocksLen = 0
+        newBlocksLen = len(newBlocks["blocks"]["blocks"])
+    else:
+        with open("blocks.json",'r') as f:
+            blocks_load = f.read()
+            blocks = json.loads(blocks_load)
+            newBlocks = getBlocks()
+            blocksLen = len(blocks["blocks"]["blocks"])
+            newBlocksLen = len(newBlocks["blocks"]["blocks"])
+
             
-        #print(newIndex)
-        #print(newLen)
-        for block in range(newIndex,len(newBlocks["blocks"]["blocks"])):
+    t, blockNo = 0, newBlocksLen - blocksLen
+    if blockNo != 0:
+        printProgressBar(t,blockNo)
+    with open('log.txt','a') as f:
+        for block in range(blocksLen,newBlocksLen):
             t+=1
             printProgressBar(t,blockNo)
             for transaction in range(0,len(newBlocks["blocks"]["blocks"][block]["transactions"])):
@@ -197,24 +204,29 @@ def extractFields(card):
     return fieldsDict
 
 
-def updateDB(blocks,newBlocks):
-    t, blockNo = 0, len(newBlocks["blocks"]["blocks"])
-    printProgressBar(t,blockNo)
+def updateDB():
+    if not os.path.exists("blocks.json"):
+        blocks = getBlocks()
+        newBlocks = blocks
+        blocksLen = 0
+        newBlocksLen = len(newBlocks["blocks"]["blocks"])
+    else:
+        with open("blocks.json",'r') as f:
+            blocks_load = f.read()
+            blocks = json.loads(blocks_load)
+            newBlocks = getBlocks()
+            blocksLen = len(blocks["blocks"]["blocks"])
+            newBlocksLen = len(newBlocks["blocks"]["blocks"])
+            
+    t, blockNo = 0, newBlocksLen - blocksLen
+    if blockNo != 0:
+        printProgressBar(t,blockNo)
     database = ""
     with open('schema.txt','a') as f:
-        newLen = len(newBlocks["blocks"]["blocks"]) - len(blocks["blocks"]["blocks"])
-        if newLen == 0:
-            newIndex = 0
-        else:
-            newIndex = len(blocks["blocks"]["blocks"])
-
         #
         #newIndex = 850
         #
-        
-        #print(newIndex)
-        #print(newLen)
-        for block in range(newIndex,len(newBlocks["blocks"]["blocks"])):
+        for block in range(blocksLen,newBlocksLen):
             t+=1
             value = ""
             printProgressBar(t,blockNo)
@@ -240,64 +252,23 @@ def updateDB(blocks,newBlocks):
                                 cardDict[cardID].update({"fields" : extractFields(cards[card])})
                                 #print(cardID)
                                 #print("\n")
-                                ##ALL GOOD UNTIL HERE. Not all fields in all of the cards. Some have 'owner' and some don't. Range misaligned.
-                                #extractFields(cards[card])
-                                '''for field in fields:
-                                    ################if
-                                    
-                                    cardDict[cardID]["fields"].update({field : {}})
-                                    fieldVal = cards[card].split(fields[field]+'":{')[1]
-
-
-
-                                    
-                                    #fieldVal = (cards[card].split(fields[field]+'":{')[1]).split("}")[0]
-                                    #print(cards[card]+" : "+fields[field]+" : "+fieldVal)
-                                    #print("\n")
-                                    
-                                    fieldVal2 = fieldVal.split("}")[0]
-                                    fieldVal3 = fieldVal2+"}"
-                                    #print(cards[card]+" : "+fields[field]+" : "+fieldVal)
-                                    #print("\n")
-                                    typeVal = fieldVal.split('"type":')[1]
-                                    typeVal = typeVal.split(',"value"')[0]
-                                    ###
-                                    if fields[field] == "clout":
-                                        valueVal = cards[card].split('"value":')[1]
-                                        #print(valueVal)
-                                        #print("\n")
-                                        valueVal = valueVal.split(',"mutable"')[0]
-                                        
-                                    else:
-                                        valueVal = fieldVal.split('"value":')[1]
-                                        valueVal = valueVal.split(',"mutable"')[0]
-                                    #print(valueVal)
-                                    #print("\n")
-                                    mutableVal = fieldVal.split('"mutable":')[1]
-                                    mutableVal = mutableVal.split("}")[0]
-                                    for field2 in range(0,len(fields2)):
-                                        if fields2[field2] == "type":
-                                            value = typeVal
-                                        elif fields2[field2] == "value":
-                                            value = valueVal
-                                        elif fields2[field2] == "mutable":
-                                            value = mutableVal
-                                        else:
-                                            value = "error"
-                                        cardDict[cardID]["fields"][fields[field]].update({fields2[field2] : value})
-                                        #print(cardID+" : "+fields[field]+" : "+value)
-                        '''
                                 cardDict.update({"release" : releaseVal})
                                 #print(cardDict)
                                 f.write(str(cardDict)+"\r\n"+"\r\n")
                                 db.insert(cardDict)
                         
                     #f.write(body+"\r\n"+"\r\n") #To include other transactions and assets too
-        print(db)
-        #test = Query()
-        #test1 = db.search(test.release == '"Volition","major":0,"minor":0,"revision":8')
-        #print(test1)
+        database = db
+        #print(db)
     return database
+
+def query():
+    
+    #test = Query()
+    #test1 = db.search(test.release == '"Volition","major":0,"minor":0,"revision":8')
+    #print(test1)
+    #return response
+    return
 
 # Print iterations progress
 def printProgressBar (
@@ -481,36 +452,13 @@ def main():
             os.mkdir(username)
         getAccountDetails(username)
         getAccountAssets(username)
-        #getPlayerStats(username)
 
     if args["log"]:
-        if not os.path.exists("blocks.json"):
-            blocks = getBlocks()
-            newBlocks = blocks
-        else:
-            with open("blocks.json",'r') as f:
-                blocks_load = f.read()
-                blocks = json.loads(blocks_load)
-                newBlocks = getBlocks()
-            
-        #if not os.path.exists("log.txt"):
-        #    createLog(blocks)
-        #else:
-        #    updateLog(blocks,newBlocks)
-
-        updateLog(blocks,newBlocks)
+        updateLog()
 
 
     if args["db"]:
-        if not os.path.exists("blocks.json"):
-            blocks = getBlocks()
-            newBlocks = blocks
-        else:
-            with open("blocks.json",'r') as f:
-                blocks_load = f.read()
-            blocks = json.loads(blocks_load)
-            newBlocks = getBlocks()
-        database = updateDB(blocks,newBlocks)
+        database = updateDB()
         print(database)
 
 	
